@@ -243,6 +243,10 @@ In summary, this code defines a system of differential equations and provides fu
 #### 1. Definition of a Class for Sinoatrial Node Object
 <p>This section of the code defines the <code>SinoAtrialNode</code> class, allowing for the creation of a Sinoatrial Node object, which represents a central component of the heart's electrical system. This class structure enables encapsulation and modularity within the code.</p>
 
+<p>
+In the Sinoatrial Node (SAN) model, ACh and Nor represent the concentrations of acetylcholine and norepinephrine, respectively, two neurotransmitters that play crucial roles in the regulation of heart rate. Acetylcholine (ACh) is usually involved in slowing down the heart rate by reducing the pacemaker current, while norepinephrine (Nor) tends to increase the heart rate by enhancing the pacemaker current. These neurotransmitters interact with specific receptors in the cardiac cells, modulating the ionic currents and thus the overall behavior of the SAN. In the context of the model, the constants c[9] and c[10] are assigned to ACh and Nor respectively, allowing their concentrations to be manipulated and thus to simulate various physiological conditions, such as stress or relaxation, that would alter the concentrations of these neurotransmitters.
+</p>
+
 ```python
 class SinoAtrialNode:
     def __init__(self, ACh=0, Nor=0):
