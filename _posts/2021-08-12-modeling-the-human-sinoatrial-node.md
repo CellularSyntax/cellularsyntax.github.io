@@ -46,6 +46,7 @@ pip install numpy scipy matplotlib
 ```python
 $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 ```
+
   </li>
 </ol>
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
@@ -58,24 +59,56 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 
     <p>This function initializes legends for states, algebraic variables, constants, and the variable of integration. Legends are used for labeling the plots.</p>
    
+```python
+def createLegends():
+    ...
+    return (legend_states, legend_algebraic, legend_voi, legend_constants)
+```
 
 #### Function: initConsts()
    
+```python
+def initConsts():
+    ...
+    return (states, constants)
+```
 
 #### Function: computeRates(voi, states, constants)
    
+```python
+def computeRates(voi, states, constants):
+    ...
+    return(rates)
+```
 
 #### Function: computeAlgebraic(constants, states, voi)
 
+```python
+def computeAlgebraic(constants, states, voi):
+    ...
+    return algebraic
+```
 
 #### Function: custom_piecewise(cases)
    
-
+```python
+def custom_piecewise(cases):
+    ...
+```
 #### Function: solve_model()
    
+```python
+def solve_model():
+    ...
+    return (voi, states, algebraic)
+```
 
-#### Function: <plot_model(voi, states, algebraic)
+#### Function: plot_model(voi, states, algebraic)
   
+```python
+def plot_model(voi, states, algebraic):
+    ...
+```
 
 
 ### References
