@@ -312,7 +312,7 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
   <p>Here's a breakdown of the parameters used in the function:</p>
 <ol>
   <li><strong>san.step</strong>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
-  <li><strong>[0, tmax]</strong>: Specifies the time span of integration, from 0 to <code>tmax</code> (50 in this example), indicating the start and end times of the simulation.</li>
+  <li><strong>[0, tmax]</strong>: Specifies the time span of integration, from 0 to <code>tmax</code> (5 in this example), indicating the start and end times of the simulation.</li>
   <li><strong>list(san.y)</strong>: The initial conditions, defined as the initial state variables <code>y</code> from the Sinoatrial Node object.</li>
   <li><strong>method='BDF'</strong>: Specifies the solver method to be used. The 'BDF' (Backward Differentiation Formula) method is an implicit multi-step method suitable for stiff problems.</li>
   <li><strong>rtol=1e-6</strong>: The relative tolerance parameter, determining the accuracy of the solution.</li>
@@ -341,9 +341,10 @@ for i in range(1, 33):
 
 plt.show()</code></pre>
 
-<p>The code produces a figure with 33 subplots, representing different states of the model. Each subplot includes labels for the x-axis ("Time (s)") and y-axis (e.g., "V_ode in Membrane (mV)"), and the font size for the y-axis labels is set to 10. Here, "mV" stands for millivolts, "mM" for millimolar, and "D.L." for dimensionless units.</p>
+<p>The code produces a figure with 33 subplots (Figure 2), representing different states of the model. Each subplot includes labels for the x-axis ("Time (s)") and y-axis (e.g., "V_ode in Membrane (mV)"), and the font size for the y-axis labels is set to 10. Here, "mV" stands for millivolts, "mM" for millimolar, and "D.L." for dimensionless units.</p>
 
 <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
+<p style="align:center"><strong>Figure 2</strong> Plot of the 33 states from the simulation, including membrane voltage (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </p>
 
 ### References
 <ol style="margin-left:20px">
