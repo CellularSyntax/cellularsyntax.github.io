@@ -66,9 +66,9 @@ pip install numpy scipy matplotlib
   <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
   <li><b>Open your shell and execute the following command to generate a Python file from the specified CellML model:</b>
 
-```python
+<code>
 $ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml python.xml
-```
+</code>
 
   </li>
 </ol>
