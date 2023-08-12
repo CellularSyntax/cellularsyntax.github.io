@@ -322,6 +322,7 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
 
 <h2>Plotting the Results</h2>
 <p>The following code is used to visualize the simulation results. It includes the definition of the legend labels for the different states and plots all 33 states, each in a separate subplot.</p>
+
 ```python
 import matplotlib.pyplot as plt
 
