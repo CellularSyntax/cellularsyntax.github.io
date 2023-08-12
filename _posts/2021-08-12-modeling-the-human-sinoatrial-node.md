@@ -42,9 +42,26 @@ pip install numpy scipy matplotlib
   <li>Open your command line or shell interface.</li>
   <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
   <li><b>Execute the following command:</b>
-    ```python
-    $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
-    ```
+
+```python
+import scipy.integrate 
+import matplotlib.pyplot as plt
+import cardiovascular.system as sys
+import numpy as np
+from collections import deque
+from cardiovascular.heart import Atria
+from cardiovascular.heart import Valves
+from cardiovascular.heart import Ventricles
+from cardiovascular.circulation import Veins
+from cardiovascular.circulation import Arteries
+from cardiovascular.nervoussystem import AfferentPathway
+from cardiovascular.nervoussystem import EfferentPathway
+from cardiovascular.nervoussystem import Effectors
+from cardiovascular.respiration import Lung
+from cardiovascular.heart import SinoAtrialNode
+import cardiovascular.config as cfg
+```
+
     This command will generate a Python file from the specified CellML model.
   </li>
 </ol>
