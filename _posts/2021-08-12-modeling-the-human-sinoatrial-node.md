@@ -74,7 +74,7 @@ The createLegends function initializes and sets legends or descriptions for stat
 
 
 ```python
-def createLegends():
+def create legends():
     legend_states = [""] * sizeStates
     legend_rates = [""] * sizeStates
     legend_algebraic = [""] * sizeAlgebraic
@@ -88,7 +88,7 @@ def createLegends():
     legend_constants[91] = "RTONF in component Membrane (millivolt)"
     legend_algebraic[59] = "i_f in component i_f (nanoA)"
     ...
-    return (legend_states, legend_algebraic, legend_voi, legend_constants)
+    return legend_states, legend_algebraic, legend_voi, legend_constants
 ```
 
 #### Function: <code>`initConsts`</code> 
@@ -108,7 +108,7 @@ def initConsts():
     constants[6] = 0.5
     constants[7] = -35
     ...
-    return (states, constants)
+    return states, constants
 ```
 
 #### Function: <code>`computeRates`</code>
@@ -194,7 +194,7 @@ def solve_model():
 
     # Compute algebraic variables
     algebraic = computeAlgebraic(constants, states, voi)
-    return (voi, states, algebraic)
+    return voi, states, algebraic
 ```
 
 #### Function: <code>`plot_model`</code>
