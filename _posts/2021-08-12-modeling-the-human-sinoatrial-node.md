@@ -4,7 +4,7 @@
 
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
-In 2017, a groundbreaking study by Alan Fabbri and colleagues [1] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in The Journal of Physiology, this work doesn't merely echo the rhythm of life; it deciphers its code.
+In 2017, a groundbreaking study by Alan Fabbri and colleagues [1] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in <i>The Journal of Physiology</i>, this work doesn't merely echo the rhythm of life; it deciphers its code.
 
 Basing their model on electrophysiological data from isolated human SAN pacemaker cells and building on the Severi-DiFrancesco model of rabbit SAN cells [2], Fabbri et al. crafted a mathematical portrait that closely resembles the action potentials and calcium transient found in real human cells.
 
@@ -259,7 +259,7 @@ class SinoAtrialNode:
 ```
 
 #### 2. Refactoring for Better Readability
-<p>The variables STATES, ALGEBRAIC, CONSTANTS are refactored to <code>y</code>, <code>a</code>, <code>c</code>, respectively, to improve readability and succinctness within the code. This change simplifies variable names without losing the underlying meaning.</p>
+<p>The variables <code>STATES</code>, <code>ALGEBRAIC</code>, <code>CONSTANTS</code> are refactored to <code>y</code>, <code>a</code>, <code>c</code>, respectively, to improve readability and succinctness within the code. This change simplifies variable names without losing the underlying meaning.</p>
 
 ```python
 self.c = np.zeros(self.NUM_CONSTANTS)
