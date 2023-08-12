@@ -54,27 +54,27 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 ### Understanding the Structure of the Generated Python Code
  <p>This section provides an overview of the generated Python code used for mathematical modeling in a particular domain. The code is divided into several functions, each with a specific role, to create, initialize, compute, and plot various mathematical and scientific parameters. Below, each function is presented with a description of its purpose.</p>
 
-#### Function: <code>createLegends()</code>
+#### Function: createLegends()
 
     <p>This function initializes legends for states, algebraic variables, constants, and the variable of integration. Legends are used for labeling the plots.</p>
    
 
-#### Function: <code>initConsts()</code>
+#### Function: initConsts()
    
 
-#### Function: <code>computeRates(voi, states, constants)</code>
+#### Function: computeRates(voi, states, constants)
    
 
-#### Function: <code>computeAlgebraic(constants, states, voi)</code>
+#### Function: computeAlgebraic(constants, states, voi)
 
 
-#### Function: <code>custom_piecewise(cases)</code>
+#### Function: custom_piecewise(cases)
    
 
-#### Function: <code>solve_model()</code>
+#### Function: solve_model()
    
 
-#### Function: <code>plot_model(voi, states, algebraic)</code>
+#### Function: <plot_model(voi, states, algebraic)
   
 
 
