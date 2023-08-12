@@ -36,6 +36,20 @@ pip install numpy scipy matplotlib
 </ol>
 <p>Once you've gathered these components, you'll be well-prepared to follow along as we explore the computational intricacies of the human sinoatrial node model.</p>
 
+### Python Code Generation from CellML File
+<p>Generating Python code from a CellML file is a straightforward process, and OpenCOR makes it a breeze. With just one command, you can transform the Fabbri model into executable Python code. Here's how:</p>
+<ol>
+  <li>Open your command line or shell interface.</li>
+  <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
+  <li><b>Execute the following command:</b>
+    ```python
+    $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
+    ```
+    This command will generate a Python file from the specified CellML model.
+  </li>
+</ol>
+<p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
+<p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
 
 #### Some Python Code
 
@@ -59,7 +73,7 @@ import cardiovascular.config as cfg
 ```
 
 
-#### References
+### References
 <ol style="margin-left:20px">
 <li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
 <li><a href="https://doi.org/10.1113/jphysiol.2012.229435">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
