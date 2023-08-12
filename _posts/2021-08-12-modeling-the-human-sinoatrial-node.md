@@ -300,7 +300,7 @@ import SinoAtrialNode
 import numpy as np
 from scipy.integrate import solve_ivp
 
-tmax = 50  # simulation duration
+tmax = 5  # simulation duration
 san = SinoAtrialNode.SinoAtrialNode()  # generate the sinoatrial node object 
 sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
                      t_eval=np.arange(0, tmax, 1e-4), vectorized=False)  # solve system
