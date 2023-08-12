@@ -74,7 +74,7 @@ def createLegends():
     return (legend_states, legend_algebraic, legend_voi, legend_constants)
 ```
 
-#### Function: initConsts()
+####  <code>`initConsts`</code> Function
    
 ```python
 def initConsts():
@@ -82,7 +82,7 @@ def initConsts():
     return (states, constants)
 ```
 
-#### Function: computeRates(voi, states, constants)
+####  <code>`computeRates`</code> Function
    
 ```python
 def computeRates(voi, states, constants):
@@ -90,7 +90,7 @@ def computeRates(voi, states, constants):
     return(rates)
 ```
 
-#### Function: computeAlgebraic(constants, states, voi)
+####  <code>`computeAlgebraic`</code> Function
 
 ```python
 def computeAlgebraic(constants, states, voi):
@@ -98,13 +98,13 @@ def computeAlgebraic(constants, states, voi):
     return algebraic
 ```
 
-#### Function: custom_piecewise(cases)
+####  <code>`custom_piecewise`</code> Function
    
 ```python
 def custom_piecewise(cases):
     ...
 ```
-#### Function: solve_model()
+#### <code>`solve_model`</code> Function
    
 ```python
 def solve_model():
@@ -112,13 +112,20 @@ def solve_model():
     return (voi, states, algebraic)
 ```
 
-#### Function: plot_model(voi, states, algebraic)
+#### <code>`plot_model`</code> Function
   
 ```python
 def plot_model(voi, states, algebraic):
     ...
 ```
-
+#### Main Execution
+  
+```python
+if __name__ == "__main__":
+    (voi, states, algebraic) = solve_model()
+    ...
+    #plot_model(voi, states, algebraic)
+```
 
 ### References
 <ol style="margin-left:20px">
