@@ -410,7 +410,7 @@ plt.show()
 <div class="figcap"><strong>Figure 3</strong> Plot of the 33 states from the simulation. Membrane potential in millivolts (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </div>
 
 ### References
-<ol style="margin-left:20px">
+<ol style="margin-left:-10px">
 <li><a href="https://doi.org/10.1113/JP273259" id="ref1">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
 <li><a href="https://doi.org/10.1113/jphysiol.2012.229435" id="ref2">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
   <li><a href="https://doi.org/10.1016/j.yjmcc.2007.04.017" id="ref3">Bucchi, Annalisa, et al. "Modulation of rate by autonomic agonists in SAN cells involves changes in diastolic depolarization and the pacemaker current." Journal of molecular and cellular cardiology 43.1 (2007): 39-48.</a></li>
