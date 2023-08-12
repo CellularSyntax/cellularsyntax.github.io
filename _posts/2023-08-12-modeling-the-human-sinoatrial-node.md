@@ -66,7 +66,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <b>Note: </b>You can install the Python packages using the following command:<br/>
 
 ```python
-pip install numpy scipy matplotlib
+$ pip install numpy scipy matplotlib
 ```
 
 <p>Once you've gathered these components, you'll be well-prepared to follow along as we explore the computational intricacies of the human sinoatrial node model.</p>
