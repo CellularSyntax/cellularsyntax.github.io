@@ -55,6 +55,17 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 ### Understanding the Structure of the Generated Python Code
  <p>This section provides an overview of the generated Python code used for mathematical modeling in a particular domain. The code is divided into several functions, each with a specific role, to create, initialize, compute, and plot various mathematical and scientific parameters. Below, each function is presented with a description of its purpose.</p>
 
+#### Size Definitions and Imports
+
+```python
+# Size of variable arrays:
+sizeAlgebraic = 101
+sizeStates = 33
+sizeConstants = 116
+from math import *
+from numpy import *
+```
+
 #### Function: createLegends()
    
 ```python
