@@ -47,11 +47,12 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     </ul>
     <br/>
   </li>
-  <b>You can install these packages using the following command:</b><br/>
-<code>
-  pip install numpy scipy matplotlib
-</code>
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
+
+    <b>Note: </b>You can install these packages using the following command:<br/>
+```python
+  pip install numpy scipy matplotlib
+```
   <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
 </ol>
 <p>Once you've gathered these components, you'll be well-prepared to follow along as we explore the computational intricacies of the human sinoatrial node model.</p>
