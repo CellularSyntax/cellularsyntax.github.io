@@ -12,6 +12,24 @@ But why does this matter? It's more than a scientific curiosity. The model provi
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
+#### Model Foundation and Constraints
+<p>The starting point of the work by Fabbri et al. [<a href="#ref1">1</a>] was the rabbit SAN cell model from Severi et al. [<a href="#ref2">2</a>], with enhancements derived from electrophysiological data of human cells and automatic optimization for unknown parameters. The model was influenced by various human cell data, constrained by AP parameters, voltage clamp data, effects of If blockers, and Ca<sup>2+</sup> transient data. Figure 1 shows a schematic diagram of the human SAN AP model, with compartmentalization essential for calcium handling and details on the ionic currents, pumps, and exchangers inherited from the parent model or developed independently.</p>
+
+#### Cell Capacitance and Dimensions
+<p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model.</p>
+
+#### Membrane Currents
+<p>Fabbri et al. [<a href="#ref1">1</a>] specified sarcolemmal currents flowing through ionic channels, pumps, and exchangers shown in Figure 1, except for I<sub>K,ACh</sub>. Adjustments were made for various currents such as the funny current (I<sub>f</sub>), rapid delayed rectifier K<sup>+</sup> current (IK<sub>r</sub>), slow delayed rectifier K<sup>+</sup> current (IK<sub>s</sub>), ultrarapid delayed rectifier K<sup>+</sup> current (IK<sub>ur</sub>), and others. These modifications included changes in conductance, implementation of kinetic schemes, and adjustments based on experimental findings or automatic optimization.</p>
+
+#### Calcium Handling
+<p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model, but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (J<sub>up</sub>), SR Ca<sup>2+</sup> release (J<sub>rel</sub>), and Ca<sup>2+</sup> diffusion and buffers.</p>
+
+#### Ion Concentrations
+<p>The model by Fabbri et al. included a detailed description of Ca<sup>2+</sup> dynamics for four compartments and fixed intracellular Na<sup>+</sup> concentration, following the whole cell configuration used in certain experiments.</p>
+
+<p>Overall, the model by Fabbri et al. integrates detailed revisions to accurately represent human SAN cells, reflecting experimental data, and making specific modifications to currents, capacitance, Ca<sup>2+</sup> handling, and ion concentrations.</p>
+
+
 ### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
