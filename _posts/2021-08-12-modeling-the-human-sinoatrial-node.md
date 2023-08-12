@@ -33,22 +33,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     You can install these packages using the following command:
     
 ```python
-import scipy.integrate 
-import matplotlib.pyplot as plt
-import cardiovascular.system as sys
-import numpy as np
-from collections import deque
-from cardiovascular.heart import Atria
-from cardiovascular.heart import Valves
-from cardiovascular.heart import Ventricles
-from cardiovascular.circulation import Veins
-from cardiovascular.circulation import Arteries
-from cardiovascular.nervoussystem import AfferentPathway
-from cardiovascular.nervoussystem import EfferentPathway
-from cardiovascular.nervoussystem import Effectors
-from cardiovascular.respiration import Lung
-from cardiovascular.heart import SinoAtrialNode
-import cardiovascular.config as cfg
+pip install numpy scipy matplotlib
 ```
 
 
