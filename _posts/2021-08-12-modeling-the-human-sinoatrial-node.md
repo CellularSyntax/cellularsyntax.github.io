@@ -320,6 +320,31 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
   <li><strong>vectorized=False</strong>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
 </ol>
 
+<h2>Plotting the Results</h2>
+<p>The following code is used to visualize the simulation results. It includes the definition of the legend labels for the different states and plots all 33 states, each in a separate subplot.</p>
+<pre><code>import matplotlib.pyplot as plt
+
+legend_states = [
+    "V_ode in Membrane (mV)",
+    "Ca_sub in Ca_dynamics (mM)",
+    "Nai_ in Nai_concentration (mM)",
+    ...
+    "a in i_KACh_a_gate (D.L.)"
+]
+
+plt.figure(figsize=(20, 50))
+for i in range(1, 33):
+    plt.subplot(17,2,i)
+    plt.plot(sol.t, sol.y[i-1])
+    plt.ylabel(legend_states[i-1], fontsize=10)
+    plt.xlabel("Time (s)")
+
+plt.show()</code></pre>
+
+<p>The code produces a figure with 33 subplots, representing different states of the model. Each subplot includes labels for the x-axis ("Time (s)") and y-axis (e.g., "V_ode in Membrane (mV)"), and the font size for the y-axis labels is set to 10. Here, "mV" stands for millivolts, "mM" for millimolar, and "D.L." for dimensionless units.</p>
+
+<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
+
 ### References
 <ol style="margin-left:20px">
 <li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
