@@ -49,9 +49,9 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     <br/>
     <b>You can install these packages using the following command:</b><br/>
     
-<code><pre>
+<code>
 pip install numpy scipy matplotlib
-</pre></code>
+</pre>
 
   </li>
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
