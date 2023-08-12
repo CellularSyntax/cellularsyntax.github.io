@@ -8,7 +8,7 @@ In 2017, a groundbreaking study by Alan Fabbri and colleagues [<a href="#ref1">1
 
 Basing their model on electrophysiological data from isolated human SAN pacemaker cells and building on the Severi-DiFrancesco model of rabbit SAN cells [<a href="#ref2">2</a>], Fabbri et al. crafted a mathematical portrait that closely resembles the action potentials and calcium transient found in real human cells.
 
-But why does this matter? It's more than a scientific curiosity. The model provides insights into the "funny current" (If) that modulates the heart's pacing rate. It explains how certain mutations affect heart rate, a finding that resonates with clinical observations. And perhaps most excitingly, it offers a valuable tool for designing new experiments and developing drugs that can tune the heart's rhythm.
+But why does this matter? It's more than a scientific curiosity. The model provides insights into the "funny current" (<code>I<sub>f</sub></code>) that modulates the heart's pacing rate. It explains how certain mutations affect heart rate, a finding that resonates with clinical observations. And perhaps most excitingly, it offers a valuable tool for designing new experiments and developing drugs that can tune the heart's rhythm.
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
