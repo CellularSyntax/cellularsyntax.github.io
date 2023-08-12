@@ -44,7 +44,7 @@ pip install numpy scipy matplotlib
   <li><b>Open your shell and execute the following command to generate a Python file from the specified CellML model:</b>
 
 ```python
-$ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
+$ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml python.xml
 ```
 
   </li>
