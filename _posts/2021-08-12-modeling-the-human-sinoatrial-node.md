@@ -197,7 +197,7 @@ def solve_model():
     return (voi, states, algebraic)
 ```
 
-#### Function: <code>`plot_model`</code> Function
+#### Function: <code>`plot_model`</code>
 
 The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
 
