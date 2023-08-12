@@ -45,7 +45,6 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
       <li><strong>scipy</strong>: To leverage scientific and technical computing.</li>
       <li><strong>matplotlib</strong>: To visualize the results and plot beautiful graphs.</li>
     </ul>
-    <br/>
   </li>
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
   <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
