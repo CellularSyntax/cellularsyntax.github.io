@@ -2,7 +2,7 @@ Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intri
 
 With an undergraduate degree in computer science and a Ph.D. in biomedical engineering, my passion lies in computational modeling in medicine and biology. From the precise control of neurons to the rhythmic beating of the heart, I find excitement in unraveling the complex mechanisms that make us tick.
 
-One of my proudest achievements is my work on the NeuHeart project, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.
+One of my proudest achievements is my work on the <a href="http://www.neuhearth2020.eu/">NeuHeart project</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.
 
 In this blog, I'll be sharing coding projects that span the realms of cardiovascular modeling, neuronal modeling, machine learning in medicine, and biomedical signal processing. Whether it's implementing models published in literature or sharing insights from my daily research, I aim to make this space educational and inspiring, especially for those new to the computational modeling game.
 
