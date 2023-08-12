@@ -48,3 +48,8 @@ hr {
   height: 35px;
   margin-right: 20px;
 }
+
+.site-title{
+  font-family: monospace;
+  color: darkgoldenrod;
+}
