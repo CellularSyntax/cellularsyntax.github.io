@@ -19,7 +19,28 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 </ol>
 ---
 
-### This is a header
+### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
+
+<p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
+<ol>
+  <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.</li>
+  <li><strong>Python Packages</strong>: These libraries act as the supporting vessels for our code:
+    <ul>
+      <li><strong>numpy</strong>: For numerical computations.</li>
+      <li><strong>scipy</strong>: To leverage scientific and technical computing.</li>
+      <li><strong>matplotlib</strong>: To visualize the results and plot beautiful graphs.</li>
+    </ul>
+    You can install these packages using the following command:
+    ```bash
+    pip install numpy scipy matplotlib
+    ```
+
+  </li>
+  <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
+  <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
+</ol>
+<p>Once you've gathered these components, you'll be well-prepared to follow along as we explore the computational intricacies of the human sinoatrial node model. Let's begin this exciting adventure!</p>
+
 
 #### Some Python Code
 
