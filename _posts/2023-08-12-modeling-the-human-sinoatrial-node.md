@@ -24,7 +24,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_schematic.jpg" style="display:block;margin-left:auto;margin-right:auto"/>
 <div class="figcap"><strong>Figure 1</strong>The cell is segmented into three areas: the subsarcolemma, cytosol, and sarcoplasmic reticulum (SR), with the SR further split into junctional and network sections. The handling of Calcium ions (Ca<sup>2+</sup>) is facilitated by two diffusion processes (J<sub>diff</sub>, from subsarcolemmal to cytosol, and J<sub>tr</sub>, from network SR to junctional SR), the uptake of Ca<sup>2+</sup> into the network SR by the SERCA pump (J<sub>up</sub>), and the release of Ca<sup>2+</sup> from the junctional SR into the subsarcolemmal space through RyRs. There are 11 various ionic channels, pumps, and exchangers through which Sodium, Calcium, and Potassium ions move across the sarcolemmal membrane. Reproduced from Fabbri et al. [<a href="#ref1">1</a>, p.2367]
 </div>
-<br/><br/>
+<br/>
 
 #### Calcium Handling
 <p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model, but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (J<sub>up</sub>), SR Ca<sup>2+</sup> release (J<sub>rel</sub>), and Ca<sup>2+</sup> diffusion and buffers.</p>
@@ -33,7 +33,6 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <p>The model by Fabbri et al. included a detailed description of Ca<sup>2+</sup> dynamics for four compartments and fixed intracellular Na<sup>+</sup> concentration, following the whole cell configuration used in certain experiments.</p>
 
 <p>Overall, the model by Fabbri et al. integrates detailed revisions to accurately represent human SAN cells, reflecting experimental data, and making specific modifications to currents, capacitance, Ca<sup>2+</sup> handling, and ion concentrations.</p>
-
 
 ### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
@@ -50,9 +49,9 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
   </li>
   <b>You can install these packages using the following command:</b><br/>
   
-```python
+<pre><code>
   pip install numpy scipy matplotlib
-```
+</code></pre>
     
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
   <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
