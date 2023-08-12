@@ -82,7 +82,7 @@ This part of the code defines the sizes of various arrays that will be used thro
 ```python
 from math import *
 from numpy import *
-# Size of variable arrays:
+# Variable array sizes
 sizeAlgebraic = 101
 sizeStates = 33
 sizeConstants = 116
