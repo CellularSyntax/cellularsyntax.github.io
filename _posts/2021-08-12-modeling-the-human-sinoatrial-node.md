@@ -293,17 +293,9 @@ result = np.piecewise(x, [condition1, condition2], [value_if_condition1, value_i
 </code></pre>
 
 ### Executing the Simulation with solve_ivp
-<p>The simulation of the Sinoatrial Node model is executed using SciPy's <code>solve_ivp</code> function, a general-purpose solver for initial value problems with a flexible interface for defining complex systems of ordinary differential equations (ODEs). Here's a breakdown of the parameters used in the function:</p>
-<ol>
-  <li><strong>san.step</strong>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
-  <li><strong>[0, tmax]</strong>: Specifies the time span of integration, from 0 to <code>tmax</code> (50 in this example), indicating the start and end times of the simulation.</li>
-  <li><strong>list(san.y)</strong>: The initial conditions, defined as the initial state variables <code>y</code> from the Sinoatrial Node object.</li>
-  <li><strong>method='BDF'</strong>: Specifies the solver method to be used. The 'BDF' (Backward Differentiation Formula) method is an implicit multi-step method suitable for stiff problems.</li>
-  <li><strong>rtol=1e-6</strong>: The relative tolerance parameter, determining the accuracy of the solution.</li>
-  <li><strong>t_eval=np.arange(0, tmax, 1e-4)</strong>: Defines the time points at which the solution is stored. It allows control over the discrete points in time for which the solver should return the system state.</li>
-  <li><strong>vectorized=False</strong>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
-</ol>
-<pre><code class="python">
+<p>The simulation of the Sinoatrial Node model is executed using SciPy's <code>solve_ivp</code> function, a general-purpose solver for initial value problems with a flexible interface for defining complex systems of ordinary differential equations (ODEs). </p>
+
+  <pre><code class="python">
 import SinoAtrialNode
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -315,7 +307,18 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
 </code></pre>
 
 <p>This call to <code>solve_ivp</code> integrates the model over the specified time interval, utilizing the BDF method and the provided initial conditions, tolerances, and evaluation points to generate the simulation results.</p>
-
+  
+  
+  <p>Here's a breakdown of the parameters used in the function:</p>
+<ol>
+  <li><strong>san.step</strong>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
+  <li><strong>[0, tmax]</strong>: Specifies the time span of integration, from 0 to <code>tmax</code> (50 in this example), indicating the start and end times of the simulation.</li>
+  <li><strong>list(san.y)</strong>: The initial conditions, defined as the initial state variables <code>y</code> from the Sinoatrial Node object.</li>
+  <li><strong>method='BDF'</strong>: Specifies the solver method to be used. The 'BDF' (Backward Differentiation Formula) method is an implicit multi-step method suitable for stiff problems.</li>
+  <li><strong>rtol=1e-6</strong>: The relative tolerance parameter, determining the accuracy of the solution.</li>
+  <li><strong>t_eval=np.arange(0, tmax, 1e-4)</strong>: Defines the time points at which the solution is stored. It allows control over the discrete points in time for which the solver should return the system state.</li>
+  <li><strong>vectorized=False</strong>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
+</ol>
 
 ### References
 <ol style="margin-left:20px">
