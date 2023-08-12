@@ -24,7 +24,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
       <li><strong>matplotlib</strong>: To visualize the results and plot beautiful graphs.</li>
     </ul>
     <br/>
-    <b>You can install these packages using the following command:</b><br/><br/>
+    <b>You can install these packages using the following command:</b><br/>
     
 ```python
 pip install numpy scipy matplotlib
