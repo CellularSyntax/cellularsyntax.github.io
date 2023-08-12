@@ -41,13 +41,11 @@ pip install numpy scipy matplotlib
 <ol>
   <li>Open your command line or shell interface.</li>
   <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
-  <li><b>Execute the following command:</b>
+  <li><b>Execute the following command to generate a Python file from the specified CellML model:</b>
 
 ```python
 $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 ```
-
-    This command will generate a Python file from the specified CellML model.
   </li>
 </ol>
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
