@@ -4,9 +4,9 @@
 
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
-In 2017, a groundbreaking study by Alan Fabbri and colleagues [<a href="ref1">1</a>] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in <i>The Journal of Physiology</i>, this work doesn't merely echo the rhythm of life; it deciphers its code.
+In 2017, a groundbreaking study by Alan Fabbri and colleagues [<a href="#ref1">1</a>] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in <i>The Journal of Physiology</i>, this work doesn't merely echo the rhythm of life; it deciphers its code.
 
-Basing their model on electrophysiological data from isolated human SAN pacemaker cells and building on the Severi-DiFrancesco model of rabbit SAN cells [<a href="ref2">2</a>], Fabbri et al. crafted a mathematical portrait that closely resembles the action potentials and calcium transient found in real human cells.
+Basing their model on electrophysiological data from isolated human SAN pacemaker cells and building on the Severi-DiFrancesco model of rabbit SAN cells [<a href="#ref2">2</a>], Fabbri et al. crafted a mathematical portrait that closely resembles the action potentials and calcium transient found in real human cells.
 
 But why does this matter? It's more than a scientific curiosity. The model provides insights into the "funny current" (If) that modulates the heart's pacing rate. It explains how certain mutations affect heart rate, a finding that resonates with clinical observations. And perhaps most excitingly, it offers a valuable tool for designing new experiments and developing drugs that can tune the heart's rhythm.
 
