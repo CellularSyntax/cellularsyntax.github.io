@@ -228,6 +228,16 @@ if __name__ == "__main__":
 
 In summary, this code defines a system of differential equations and provides functions to initialize the system, compute the derivatives, integrate the system over time, and plot the results. The code is organized into clear functions, each with a specific role in the modeling and simulation process.
 
+### Necessary Code Modifications for Successful Execution
+
+<p>Unfortunately, the generated code does not work out of the box, requiring some critical adjustments. This situation often occurs when automatically produced code is utilized, and it highlights the necessity of human intervention in the coding process. In brief, the following actions will be undertaken to modify the existing code to make it functional and more user-friendly:</p>
+<ol>
+  <li><strong>Refactoring for Readability</strong>: To enhance understanding and maintenance, the code will undergo refactoring. This process involves restructuring the existing code without changing its external behavior. It aims to improve the nonfunctional attributes of the software, making the code more readable.</li>
+  <li><strong>Integration with SciPy's <code>solve_ivp</code></strong>: The existing solver will be replaced with <code>solve_ivp</code> from the SciPy library. This modification will enhance the code's efficiency, leveraging a well-optimized solver. It necessitates adapting the function signatures and updating the way the model's differential equations are defined.</li>
+  <li><strong>Plotting Code Modification</strong>: To generate a better-readable figure of the states, the existing plotting code will be modified. This may involve changes in labeling, scales, and visualization styles to convey the information more effectively.</li>
+</ol>
+<p>These modifications will be vital to transform the raw generated code into a functional, efficient, and user-friendly script. The following sections will delve into each of these modifications, providing specific examples and guidance on implementing these changes. By following these steps, users will be able to leverage the provided code to suit their specific needs and preferences.</p>
+
 ### References
 <ol style="margin-left:20px">
 <li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
