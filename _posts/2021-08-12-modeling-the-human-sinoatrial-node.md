@@ -12,12 +12,6 @@ But why does this matter? It's more than a scientific curiosity. The model provi
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
-<b>References:</b> 
-<ol style="margin-left:20px">
-<li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
-<li><a href="https://doi.org/10.1113/jphysiol.2012.229435">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
-</ol>
-
 ### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
@@ -64,14 +58,9 @@ from cardiovascular.heart import SinoAtrialNode
 import cardiovascular.config as cfg
 ```
 
-#### Some PowerShell Code
 
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
-```
+#### References
+<ol style="margin-left:20px">
+<li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
+<li><a href="https://doi.org/10.1113/jphysiol.2012.229435">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
+</ol>
