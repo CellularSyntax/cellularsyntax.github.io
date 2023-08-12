@@ -91,7 +91,7 @@ def createLegends():
     return (legend_states, legend_algebraic, legend_voi, legend_constants)
 ```
 
-####  <code>`initConsts`</code> Function
+#### Function: <code>`initConsts`</code> 
 
 The initConsts function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
 
@@ -111,7 +111,7 @@ def initConsts():
     return (states, constants)
 ```
 
-####  <code>`computeRates`</code> Function
+#### Function: <code>`computeRates`</code>
 
 The computeRates function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
 
@@ -132,7 +132,7 @@ def computeRates(voi, states, constants):
     return(rates)
 ```
 
-####  <code>`computeAlgebraic`</code> Function
+#### Function: <code>`computeAlgebraic`</code>
 
 The computeAlgebraic function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
 
@@ -153,7 +153,7 @@ def computeAlgebraic(constants, states, voi):
     return algebraic
 ```
 
-####  <code>`custom_piecewise`</code> Function
+#### Function: <code>`custom_piecewise`</code>
 
 The custom_piecewise function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
 
@@ -162,7 +162,7 @@ def custom_piecewise(cases):
     """Compute result of a piecewise function"""
     return select(cases[0::2],cases[1::2])
 ```
-#### <code>`solve_model`</code> Function
+#### Function: <code>`solve_model`</code>
 
 The solve_model function sets up and solves the differential equations using SciPy's ODE solver. It initializes the constants and states, sets up the solver, and then integrates the system over a specified time span, returning the variable of integration, states, and algebraic variables.
 
@@ -197,7 +197,7 @@ def solve_model():
     return (voi, states, algebraic)
 ```
 
-#### <code>`plot_model`</code> Function
+#### Function: <code>`plot_model`</code> Function
 
 The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
 
