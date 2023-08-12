@@ -41,7 +41,7 @@ pip install numpy scipy matplotlib
 <ol>
   <li>Open your command line or shell interface.</li>
   <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
-  <li><b>Execute the following command to generate a Python file from the specified CellML model:</b>
+  <li><b>Open your shell and execute the following command to generate a Python file from the specified CellML model:</b>
 
 ```python
 $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
@@ -50,28 +50,6 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 </ol>
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
-
-#### Some Python Code
-
-```python
-import scipy.integrate 
-import matplotlib.pyplot as plt
-import cardiovascular.system as sys
-import numpy as np
-from collections import deque
-from cardiovascular.heart import Atria
-from cardiovascular.heart import Valves
-from cardiovascular.heart import Ventricles
-from cardiovascular.circulation import Veins
-from cardiovascular.circulation import Arteries
-from cardiovascular.nervoussystem import AfferentPathway
-from cardiovascular.nervoussystem import EfferentPathway
-from cardiovascular.nervoussystem import Effectors
-from cardiovascular.respiration import Lung
-from cardiovascular.heart import SinoAtrialNode
-import cardiovascular.config as cfg
-```
-
 
 ### References
 <ol style="margin-left:20px">
