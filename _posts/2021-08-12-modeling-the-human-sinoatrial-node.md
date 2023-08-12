@@ -344,7 +344,6 @@ legend_states = [
     "Ca_sub in Ca_dynamics (mM)",
     "Nai_ in Nai_concentration (mM)",
     ...
-    "a in i_KACh_a_gate (D.L.)"
 ]
 
 plt.figure(figsize=(20, 50))
