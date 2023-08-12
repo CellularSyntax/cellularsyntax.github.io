@@ -8,7 +8,7 @@ One of my proudest achievements is my work on the <a href="http://www.neuhearth2
 
 In this blog, I'll be sharing coding projects that span the realms of cardiovascular modeling, neuronal modeling, machine learning in medicine, and biomedical signal processing. Whether it's implementing models published in literature or sharing insights from my daily research, I aim to make this space educational and inspiring, especially for those new to the computational modeling game.
 
-Feel free to explore and learn. If you're interested in collaborations or simply want to chat about modeling stuff, I'd be thrilled to hear from you! Reach out to me via email at max.haberbusch@meduniwien.ac.at or connect with me on <a href="https://www.linkedin.com/in/max-haberbusch-505625142/">LinkedIn</a>.
+Feel free to explore and learn. If you're interested in collaborations or simply want to chat about modeling stuff, I'd be thrilled to hear from you! Reach out to me via email at <a href="mailto:max.haberbusch@meduniwien.ac.at">max.haberbusch@meduniwien.ac.at</a> or connect with me on <a href="https://www.linkedin.com/in/max-haberbusch-505625142/">LinkedIn</a>.
 
 And, before you dive into the blog, a quick shoutout to the creator of the cute neuron logo that adds a touch of charm to Cellular Syntax: Neuron icons created by <a href="https://www.flaticon.com/free-icons/neuron" title="neuron icons">Neuron icons created by Freepik - Flaticon</a>.
 
