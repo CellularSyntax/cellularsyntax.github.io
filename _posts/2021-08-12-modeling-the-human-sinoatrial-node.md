@@ -49,9 +49,10 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     <br/>
   </li>
   <b>You can install these packages using the following command:</b><br/>
-  <code>
+  
+```python
   pip install numpy scipy matplotlib
-  </pre>
+```
     
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
   <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
@@ -67,9 +68,9 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
   </li>
 </ol>
 
-<code>
+```python
 $ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml python.xml
-</code>
+```
 
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
