@@ -66,7 +66,7 @@ from math import *
 from numpy import *
 ```
 
-#### <code>createLegends</code> Function
+#### <code>`createLegends`</code> Function
    
 ```python
 def createLegends():
