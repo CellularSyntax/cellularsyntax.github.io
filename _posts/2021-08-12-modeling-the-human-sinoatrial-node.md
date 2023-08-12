@@ -57,6 +57,8 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 
 #### Size Definitions and Imports
 
+This part of the code defines the sizes of various arrays that will be used throughout the code. It also imports all the functions from the math and NumPy modules.
+
 ```python
 # Size of variable arrays:
 sizeAlgebraic = 101
@@ -67,7 +69,10 @@ from numpy import *
 ```
 
 #### <code>`createLegends`</code> Function
-   
+
+The createLegends function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi), and constants. This can be useful for annotating plots or for providing context to the values within the code.
+
+
 ```python
 def createLegends():
     legend_states = [""] * sizeStates
@@ -87,7 +92,9 @@ def createLegends():
 ```
 
 ####  <code>`initConsts`</code> Function
-   
+
+The initConsts function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
+
 ```python
 def initConsts():
     constants = [0.0] * sizeConstants; states = [0.0] * sizeStates;
@@ -105,7 +112,9 @@ def initConsts():
 ```
 
 ####  <code>`computeRates`</code> Function
-   
+
+The computeRates function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
+
 ```python
 def computeRates(voi, states, constants):
     rates = [0.0] * sizeStates; algebraic = [0.0] * sizeAlgebraic
@@ -125,6 +134,9 @@ def computeRates(voi, states, constants):
 
 ####  <code>`computeAlgebraic`</code> Function
 
+The computeAlgebraic function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
+
+
 ```python
 def computeAlgebraic(constants, states, voi):
     algebraic = array([[0.0] * len(voi)] * sizeAlgebraic)
@@ -142,14 +154,18 @@ def computeAlgebraic(constants, states, voi):
 ```
 
 ####  <code>`custom_piecewise`</code> Function
-   
+
+The custom_piecewise function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
+
 ```python
 def custom_piecewise(cases):
     """Compute result of a piecewise function"""
     return select(cases[0::2],cases[1::2])
 ```
 #### <code>`solve_model`</code> Function
-   
+
+The solve_model function sets up and solves the differential equations using SciPy's ODE solver. It initializes the constants and states, sets up the solver, and then integrates the system over a specified time span, returning the variable of integration, states, and algebraic variables.
+
 ```python
 def solve_model():
     """Solve model with ODE solver"""
@@ -182,7 +198,9 @@ def solve_model():
 ```
 
 #### <code>`plot_model`</code> Function
-  
+
+The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
+
 ```python
 def plot_model(voi, states, algebraic):
     """Plot variables against variable of integration"""
@@ -195,7 +213,9 @@ def plot_model(voi, states, algebraic):
     pylab.show()
 ```
 #### Main Execution
-  
+
+This part of the code is executed when the script is run directly. It calls the solve_model function to compute the results and then plots them using Matplotlib.
+
 ```python
 if __name__ == "__main__":
     (voi, states, algebraic) = solve_model()
@@ -205,6 +225,8 @@ if __name__ == "__main__":
     plt.xlim(0,20)
     plot_model(voi, states, algebraic)
 ```
+
+In summary, this code defines a system of differential equations and provides functions to initialize the system, compute the derivatives, integrate the system over time, and plot the results. The code is organized into clear functions, each with a specific role in the modeling and simulation process.
 
 ### References
 <ol style="margin-left:20px">
