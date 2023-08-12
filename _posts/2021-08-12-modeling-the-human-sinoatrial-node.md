@@ -1,6 +1,6 @@
 ## Modeling the Human Sinoatrial Node
 
-### Welcome to the Beat of Life: Modeling the Human Sinoatrial Node
+### Introduction
 
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
