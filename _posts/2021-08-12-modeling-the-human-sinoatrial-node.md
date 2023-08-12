@@ -23,14 +23,15 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
 <ol>
-  <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.</li>
+  <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.<br/></li>
   <li><strong>Python Packages</strong>: These libraries act as the supporting vessels for our code:
     <ul>
       <li><strong>numpy</strong>: For numerical computations.</li>
       <li><strong>scipy</strong>: To leverage scientific and technical computing.</li>
       <li><strong>matplotlib</strong>: To visualize the results and plot beautiful graphs.</li>
     </ul>
-    You can install these packages using the following command:
+    <br/>
+    You can install these packages using the following command:<br/>
     
 ```python
 pip install numpy scipy matplotlib
