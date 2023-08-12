@@ -88,13 +88,13 @@ sizeStates = 33
 sizeConstants = 116
 ```
 
-#### Function: <code>`createLegends`</code>
+#### Create Legends and Labels
 
-The createLegends function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
+The <code>createLegends</code> function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
 
 
 ```python
-def create legends():
+def createLegends():
     legend_states = [""] * sizeStates
     legend_rates = [""] * sizeStates
     legend_algebraic = [""] * sizeAlgebraic
@@ -111,9 +111,9 @@ def create legends():
     return legend_states, legend_algebraic, legend_voi, legend_constants
 ```
 
-#### Function: <code>`initConsts`</code> 
+#### Initialize Constants and States
 
-The initConsts function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
+The <code>initConsts</code> function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
 
 ```python
 def initConsts():
@@ -131,9 +131,9 @@ def initConsts():
     return states, constants
 ```
 
-#### Function: <code>`computeRates`</code>
+#### Compute Rates
 
-The computeRates function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
+The <code>computeRates</code> function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
 
 ```python
 def computeRates(voi, states, constants):
@@ -152,9 +152,9 @@ def computeRates(voi, states, constants):
     return rates
 ```
 
-#### Function: <code>`computeAlgebraic`</code>
+#### Compute Algebraic Variables
 
-The computeAlgebraic function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
+The <code>computeAlgebraic</code> function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
 
 
 ```python
@@ -173,16 +173,16 @@ def computeAlgebraic(constants, states, voi):
     return algebraic
 ```
 
-#### Function: <code>`custom_piecewise`</code>
+#### Piecewise Function
 
-The custom_piecewise function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
+The <code>custom_piecewise</code> function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
 
 ```python
 def custom_piecewise(cases):
     """Compute result of a piecewise function"""
     return select(cases[0::2],cases[1::2])
 ```
-#### Function: <code>`solve_model`</code>
+#### Solve the Model
 
 The solve_model function sets up and solves the differential equations using SciPy's ODE solver. It initializes the constants and states, sets up the solver, and then integrates the system over a specified time span, returning the variable of integration, states, and algebraic variables.
 
@@ -217,7 +217,7 @@ def solve_model():
     return voi, states, algebraic
 ```
 
-#### Function: <code>`plot_model`</code>
+#### Plot the Results
 
 The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
 
