@@ -70,7 +70,7 @@ sizeConstants = 116
 
 #### Function: <code>`createLegends`</code>
 
-The createLegends function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi), and constants. This can be useful for annotating plots or for providing context to the values within the code.
+The createLegends function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
 
 
 ```python
