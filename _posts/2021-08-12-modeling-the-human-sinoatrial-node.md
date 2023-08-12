@@ -17,7 +17,6 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
 <li><a href="https://doi.org/10.1113/jphysiol.2012.229435">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
 </ol>
----
 
 ### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
@@ -36,7 +35,6 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 ```python
 pip install numpy scipy matplotlib
 ```
-
 
   </li>
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
