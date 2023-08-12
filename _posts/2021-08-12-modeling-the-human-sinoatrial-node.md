@@ -246,7 +246,12 @@ In summary, this code defines a system of differential equations and provides fu
 ```python
 class SinoAtrialNode:
     def __init__(self, ACh=0, Nor=0):
-        ...
+        self.NUM_ALGEBRAIC = 101
+        self.NUM_STATES = 33
+        self.NUM_CONSTANTS = 116
+        self.c = np.zeros(self.NUM_CONSTANTS)
+        self.y = np.zeros(self.NUM_STATES)
+        self.update(ACh, Nor)
 ```
 
 #### 2. Refactoring for Better Readability
