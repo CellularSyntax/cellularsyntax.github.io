@@ -51,6 +51,64 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
 
+### Understanding the Structure of the Generated Python Code
+ <p>This section provides an overview of the generated Python code used for mathematical modeling in a particular domain. The code is divided into several functions, each with a specific role, to create, initialize, compute, and plot various mathematical and scientific parameters. Below, each function is presented with a description of its purpose.</p>
+
+#### Function: <code>createLegends()</code>
+    <p>This function initializes legends for states, algebraic variables, constants, and the variable of integration. Legends are used for labeling the plots.</p>
+    <pre><code>
+def createLegends():
+    ...
+    return (legend_states, legend_algebraic, legend_voi, legend_constants)
+    </code></pre>
+
+#### Function: <code>initConsts()</code>
+    <p>This function initializes the constants and states arrays with specific values that are fundamental to the mathematical model.</p>
+    <pre><code>
+def initConsts():
+    ...
+    return (states, constants)
+    </code></pre>
+
+#### Function: <code>computeRates(voi, states, constants)</code>
+    <p>This function calculates the rates by defining the dynamics of the system using differential equations.</p>
+    <pre><code>
+def computeRates(voi, states, constants):
+    ...
+    return(rates)
+    </code></pre>
+
+#### Function: <code>computeAlgebraic(constants, states, voi)</code>
+    <p>This function computes the algebraic variables that depend on the states, constants, and variable of integration.</p>
+    <pre><code>
+def computeAlgebraic(constants, states, voi):
+    ...
+    return algebraic
+    </code></pre>
+
+#### Function: <code>custom_piecewise(cases)</code>
+    <p>This auxiliary function computes the result of a piecewise-defined function.</p>
+    <pre><code>
+def custom_piecewise(cases):
+    ...
+    </code></pre>
+
+#### Function: <code>solve_model()</code>
+    <p>This function sets up and solves the mathematical model using an ODE solver.</p>
+    <pre><code>
+def solve_model():
+    ...
+    return (voi, states, algebraic)
+    </code></pre>
+
+#### Function: <code>plot_model(voi, states, algebraic)</code>
+    <p>This function plots the variables against the variable of integration using the legends created earlier.</p>
+    <pre><code>
+def plot_model(voi, states, algebraic):
+    ...
+    </code></pre>
+
+
 ### References
 <ol style="margin-left:20px">
 <li><a href="https://doi.org/10.1113/JP273259">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
