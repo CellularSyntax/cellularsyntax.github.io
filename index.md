@@ -2,7 +2,7 @@
 
 <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life.</p>
 
-<p><img src="https://media.licdn.com/dms/image/C4D03AQEfRe_XhV-AnA/profile-displayphoto-shrink_800_800/0/1659609854656?e=1697068800&v=beta&t=fH-oPbs7WzWP01imvWxjGDF1eEXvZgmu4t-dSbdAzqQ" alt="profilepic" style="border-radius: 50%;max-width:20%;display:inline-block;float:right">
+<p><img src="https://media.licdn.com/dms/image/C4D03AQEfRe_XhV-AnA/profile-displayphoto-shrink_800_800/0/1659609854656?e=1697068800&v=beta&t=fH-oPbs7WzWP01imvWxjGDF1eEXvZgmu4t-dSbdAzqQ" alt="profilepic" style="border-radius:50%;max-width:10%;display:inline-block;float:left">
 With an undergraduate degree in computer science and a Ph.D. in biomedical engineering, my passion lies in computational modeling in medicine and biology. From the precise control of neurons to the rhythmic beating of the heart, I find excitement in unraveling the complex mechanisms that make us tick. </p>
 
 <p>One of my proudest achievements is my work on the <a href="http://www.neuhearth2020.eu/">NeuHeart project</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
