@@ -212,6 +212,7 @@ def plot_model(voi, states, algebraic):
     pylab.legend(legend_states + legend_algebraic, loc='best')
     pylab.show()
 ```
+
 #### Main Execution
 
 This part of the code is executed when the script is run directly. It calls the solve_model function to compute the results and then plots them using Matplotlib.
