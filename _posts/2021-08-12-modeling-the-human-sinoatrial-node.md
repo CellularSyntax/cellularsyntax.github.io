@@ -344,7 +344,7 @@ plt.show()</code></pre>
 <p>The code produces a figure with 33 subplots (Figure 2), representing different states of the model. Each subplot includes labels for the x-axis ("Time (s)") and y-axis (e.g., "V_ode in Membrane (mV)"), and the font size for the y-axis labels is set to 10. Here, "mV" stands for millivolts, "mM" for millimolar, and "D.L." for dimensionless units.</p>
 
 <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
-<p style="text-align:center;font-size:8pt"><strong>Figure 2</strong> Plot of the 33 states from the simulation, including membrane voltage (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </p>
+<span style="text-align:center;font-size:8pt"><strong>Figure 2</strong> Plot of the 33 states from the simulation, including membrane voltage (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </span>
 
 ### References
 <ol style="margin-left:20px">
