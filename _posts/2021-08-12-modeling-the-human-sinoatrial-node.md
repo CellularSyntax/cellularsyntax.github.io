@@ -53,19 +53,19 @@ $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
 
 ### Understanding the Structure of the Generated Python Code
- <p>This section provides an overview of the generated Python code used for mathematical modeling in a particular domain. The code is divided into several functions, each with a specific role, to create, initialize, compute, and plot various mathematical and scientific parameters. Below, each function is presented with a description of its purpose.</p>
+ <p>This section offers an in-depth examination of the Python code generated to simulate the Sinoatrial Node (SAN). The code is structured into various functions, each tailored to handle distinct aspects of the SAN model. Below, each function is presented with a description of its purpose.</p>
 
 #### Size Definitions and Imports
 
 This part of the code defines the sizes of various arrays that will be used throughout the code. It also imports all the functions from the math and NumPy modules.
 
 ```python
+from math import *
+from numpy import *
 # Size of variable arrays:
 sizeAlgebraic = 101
 sizeStates = 33
 sizeConstants = 116
-from math import *
-from numpy import *
 ```
 
 #### Function: <code>`createLegends`</code>
@@ -129,7 +129,7 @@ def computeRates(voi, states, constants):
     rates[11] = (constants[57]*states[14]-algebraic[17]*states[1]*states[11])-(algebraic[8]*(power(states[1], 2.00000))*states[11]-constants[58]*states[12])
     rates[12] = (algebraic[8]*(power(states[1], 2.00000))*states[11]-constants[58]*states[12])-(algebraic[17]*states[1]*states[12]-constants[57]*states[13])
     ...
-    return(rates)
+    return rates
 ```
 
 #### Function: <code>`computeAlgebraic`</code>
