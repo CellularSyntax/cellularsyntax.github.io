@@ -287,6 +287,12 @@ def __init__(self, ACh=0, Nor=0):
 def step(self, t, y):
     a = np.zeros(self.NUM_ALGEBRAIC)
     dydt = np.zeros(self.NUM_STATES)
+    self.y = y
+    a[6] = self.c[69] * self.c[78] * (1.0 - (self.y[22] + self.y[18])) - self.c[75] * self.y[18]
+    dydt[18] = a[6]
+    a[1] = self.c[47] / (self.c[47] + self.y[1])
+    a[7] = (0.001 * a[1]) / self.c[46]
+    dydt[8] = (a[1] - self.y[8]) / a[7]
     ...
     return dydt
 ```
