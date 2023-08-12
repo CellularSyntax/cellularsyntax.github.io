@@ -357,13 +357,13 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
   
   <p>Here's a breakdown of the parameters used in the function:</p>
 <ol>
-  <li><strong>san.step</strong>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
-  <li><strong>[0, tmax]</strong>: Specifies the time span of integration, from 0 to <code>tmax</code> (5 in this example), indicating the start and end times of the simulation.</li>
-  <li><strong>list(san.y)</strong>: The initial conditions, defined as the initial state variables <code>y</code> from the Sinoatrial Node object.</li>
-  <li><strong>method='BDF'</strong>: Specifies the solver method to be used. The 'BDF' (Backward Differentiation Formula) method is an implicit multi-step method suitable for stiff problems.</li>
-  <li><strong>rtol=1e-6</strong>: The relative tolerance parameter, determining the accuracy of the solution.</li>
-  <li><strong>t_eval=np.arange(0, tmax, 1e-4)</strong>: Defines the time points at which the solution is stored. It allows control over the discrete points in time for which the solver should return the system state.</li>
-  <li><strong>vectorized=False</strong>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
+  <li><code>san.step</code>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
+  <li><code>[0, tmax]</code>: Specifies the time span of integration, from 0 to <code>tmax</code> (5 in this example), indicating the start and end times of the simulation.</li>
+  <li><code>list(san.y)</code>: The initial conditions, defined as the initial state variables <code>y</code> from the Sinoatrial Node object.</li>
+  <li><code>method='BDF'</code>: Specifies the solver method to be used. The 'BDF' (Backward Differentiation Formula) method is an implicit multi-step method suitable for stiff problems.</li>
+  <li><code>rtol=1e-6</code>: The relative tolerance parameter, determining the accuracy of the solution.</li>
+  <li><code>t_eval=np.arange(0, tmax, 1e-4)</code>: Defines the time points at which the solution is stored. It allows control over the discrete points in time for which the solver should return the system state.</li>
+  <li><code>vectorized=False</code>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
 </ol>
 
 <h2>Plotting the Results</h2>
