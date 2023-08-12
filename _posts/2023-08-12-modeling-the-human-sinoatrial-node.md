@@ -417,8 +417,4 @@ plt.show()
     <li><a href="https://doi.org/10.1093/eurheartj/ehm339" id="ref4">Verkerk, Arie O., et al. "Pacemaker current (I f) in the human sinoatrial node." European heart journal 28.20 (2007): 2472-2478.</a></li>
     <li><a href="https://doi.org/10.1016/j.yjmcc.2009.09.020" id="ref5"><li><a href="https://doi.org/10.1093/eurheartj/ehm339" id="ref4">Verkerk, Arie O., et al. "Pacemaker current (I f) in the human sinoatrial node." European heart journal 28.20 (2007): 2472-2478.</a></li>
     <li><a href="https://doi.org/10.1155/2013/507872" id="ref6"><li><a href="https://doi.org/10.1093/eurheartj/ehm339" id="ref4">      Verkerk, Arie O., Marcel MGJ van Borren, and Ronald Wilders. "Calcium transient and sodium-calcium exchange current in human versus rabbit sinoatrial node pacemaker cells." The Scientific World Journal 2013 (2013).</a></li>
-
-
-</a></li>
-
 </ol>
