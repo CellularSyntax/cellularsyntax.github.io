@@ -267,9 +267,13 @@ self.y = np.zeros(self.NUM_STATES)
 
 ```python
 def update(self, ACh, Nor):
+    self.y[0] = -47.787168
+    self.y[1] = 6.226104e-5
+    self.y[2] = 5
+    self.y[3] = 0.009508
+    self.y[4] = 0.447724
+    self.y[5] = 0.003058
     ...
-    with np.errstate(divide='ignore'):
-        self.c[115] = ...
 ```
 
 #### 4. Constructor for Initialization
