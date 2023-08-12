@@ -70,6 +70,18 @@ from numpy import *
    
 ```python
 def createLegends():
+    legend_states = [""] * sizeStates
+    legend_rates = [""] * sizeStates
+    legend_algebraic = [""] * sizeAlgebraic
+    legend_voi = ""
+    legend_constants = [""] * sizeConstants
+    legend_voi = "time in component environment (second)"
+    legend_constants[0] = "R in component Membrane (joule_per_kilomole_kelvin)"
+    legend_constants[1] = "T in component Membrane (kelvin)"
+    legend_constants[2] = "F in component Membrane (coulomb_per_mole)"
+    legend_constants[3] = "C in component Membrane (microF)"
+    legend_constants[91] = "RTONF in component Membrane (millivolt)"
+    legend_algebraic[59] = "i_f in component i_f (nanoA)"
     ...
     return (legend_states, legend_algebraic, legend_voi, legend_constants)
 ```
@@ -78,6 +90,16 @@ def createLegends():
    
 ```python
 def initConsts():
+    constants = [0.0] * sizeConstants; states = [0.0] * sizeStates;
+    constants[0] = 8314.472
+    constants[1] = 310
+    constants[2] = 96485.3415
+    constants[3] = 5.7e-5
+    constants[4] = 0
+    states[0] = -47.787168
+    constants[5] = 0.5
+    constants[6] = 0.5
+    constants[7] = -35
     ...
     return (states, constants)
 ```
@@ -86,6 +108,17 @@ def initConsts():
    
 ```python
 def computeRates(voi, states, constants):
+    rates = [0.0] * sizeStates; algebraic = [0.0] * sizeAlgebraic
+    algebraic[6] = constants[69]*constants[78]*(1.00000-(states[22]+states[18]))-constants[75]*states[18]
+    rates[18] = algebraic[6]
+    algebraic[1] = constants[47]/(constants[47]+states[1])
+    algebraic[7] = (0.00100000*algebraic[1])/constants[46]
+    rates[8] = (algebraic[1]-states[8])/algebraic[7]
+    algebraic[2] = constants[51]-(constants[51]-constants[52])/(1.00000+power(constants[53]/states[15], constants[54]))
+    algebraic[8] = constants[55]/algebraic[2]
+    algebraic[17] = constants[56]*algebraic[2]
+    rates[11] = (constants[57]*states[14]-algebraic[17]*states[1]*states[11])-(algebraic[8]*(power(states[1], 2.00000))*states[11]-constants[58]*states[12])
+    rates[12] = (algebraic[8]*(power(states[1], 2.00000))*states[11]-constants[58]*states[12])-(algebraic[17]*states[1]*states[12]-constants[57]*states[13])
     ...
     return(rates)
 ```
@@ -94,6 +127,16 @@ def computeRates(voi, states, constants):
 
 ```python
 def computeAlgebraic(constants, states, voi):
+    algebraic = array([[0.0] * len(voi)] * sizeAlgebraic)
+    states = array(states)
+    voi = array(voi)
+    algebraic[6] = constants[69]*constants[78]*(1.00000-(states[22]+states[18]))-constants[75]*states[18]
+    algebraic[1] = constants[47]/(constants[47]+states[1])
+    algebraic[7] = (0.00100000*algebraic[1])/constants[46]
+    algebraic[2] = constants[51]-(constants[51]-constants[52])/(1.00000+power(constants[53]/states[15], constants[54]))
+    algebraic[8] = constants[55]/algebraic[2]
+    algebraic[17] = constants[56]*algebraic[2]
+    algebraic[5] = custom_piecewise([greater(voi , constants[5]) & less(voi , constants[5]+constants[6]), constants[7] , True, constants[8]])
     ...
     return algebraic
 ```
@@ -102,13 +145,39 @@ def computeAlgebraic(constants, states, voi):
    
 ```python
 def custom_piecewise(cases):
-    ...
+    """Compute result of a piecewise function"""
+    return select(cases[0::2],cases[1::2])
 ```
 #### <code>`solve_model`</code> Function
    
 ```python
 def solve_model():
-    ...
+    """Solve model with ODE solver"""
+    from scipy.integrate import ode
+    # Initialise constants and state variables
+    (init_states, constants) = initConsts()
+
+    # Set timespan to solve over
+    voi = linspace(0, 10, 500)
+
+    # Construct ODE object to solve
+    r = ode(computeRates)
+    r.set_integrator('vode', method='bdf', atol=1e-06, rtol=1e-06, max_step=1)
+    r.set_initial_value(init_states, voi[0])
+    r.set_f_params(constants)
+
+    # Solve model
+    states = array([[0.0] * len(voi)] * sizeStates)
+    states[:,0] = init_states
+    for (i,t) in enumerate(voi[1:]):
+        if r.successful():
+            r.integrate(t)
+            states[:,i+1] = r.y
+        else:
+            break
+
+    # Compute algebraic variables
+    algebraic = computeAlgebraic(constants, states, voi)
     return (voi, states, algebraic)
 ```
 
@@ -116,15 +185,25 @@ def solve_model():
   
 ```python
 def plot_model(voi, states, algebraic):
-    ...
+    """Plot variables against variable of integration"""
+    import pylab
+    (legend_states, legend_algebraic, legend_voi, legend_constants) = createLegends()
+    pylab.figure(1)
+    pylab.plot(voi, vstack((states,algebraic)).T)
+    pylab.xlabel(legend_voi)
+    pylab.legend(legend_states + legend_algebraic, loc='best')
+    pylab.show()
 ```
 #### Main Execution
   
 ```python
 if __name__ == "__main__":
     (voi, states, algebraic) = solve_model()
-    ...
-    #plot_model(voi, states, algebraic)
+    from matplotlib import pyplot as plt
+    import numpy as np
+    plt.plot(states)
+    plt.xlim(0,20)
+    plot_model(voi, states, algebraic)
 ```
 
 ### References
