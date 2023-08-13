@@ -1,5 +1,6 @@
 ## Modeling the Human Sinoatrial Node
 
+### Table of Contents
 1. [Introduction](#1-introduction)
 2. [Model Foundation](#2-model-foundation)
 3. [Prerequisites for Implementing the Human SAN Model](#3-prerequisites-for-implementing-the-human-san-model)
@@ -7,7 +8,6 @@
 5. [Understanding the Structure of the Generated Python Code](#5-understanding-the-structure-of-the-generated-python-code)
 6. [Code Modifications](#6-code-modifications)
 7. [References](#references)
-
 
 ### 1. Introduction
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
