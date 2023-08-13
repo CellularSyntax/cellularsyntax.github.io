@@ -86,7 +86,7 @@ $ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.c
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
 
 ### Understanding the Structure of the Generated Python Code
- <p>This section offers an in-depth examination of the Python code generated to simulate the Sinoatrial Node (SAN). The code is structured into various functions, each tailored to handle distinct aspects of the SAN model. Below, each function is presented with a description of its purpose.</p>
+ <p>This section offers an in-depth examination of the Python code generated to simulate the sinoatrial node. The code is structured into various functions, each tailored to handle distinct aspects of the SAN model. Below, each function is presented with a description of its purpose.</p>
 
 #### Size Definitions and Imports
 This part of the code defines the sizes of various arrays that will be used throughout the code. It also imports all the functions from the math and NumPy modules.
@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
 In summary, this code defines a system of differential equations and provides functions to initialize the system, compute the derivatives, integrate the system over time, and plot the results. The code is organized into clear functions, each with a specific role in the modeling and simulation process.
 
-### Necessary Code Modifications for Successful Execution
+### Code Modifications
 <p>Unfortunately, the generated code does not work out of the box, requiring some critical adjustments. This situation often occurs when automatically produced code is utilized, and it highlights the necessity of human intervention in the coding process. In brief, the following actions will be undertaken to modify the existing code to make it functional and more user-friendly:</p>
 <ol>
   <li><strong>Refactoring for Readability</strong>: To enhance understanding and maintenance, the code will undergo refactoring. This process involves restructuring the existing code without changing its external behavior. It aims to improve the nonfunctional attributes of the software, making the code more readable.</li>
@@ -263,11 +263,11 @@ In summary, this code defines a system of differential equations and provides fu
 </ol>
 <p>These modifications will be vital to transform the raw generated code into a functional, efficient, and user-friendly script. The following sections will delve into each of these modifications, providing specific examples and guidance on implementing these changes. By following these steps, users will be able to leverage the provided code to suit their specific needs and preferences.</p>
 
-#### 1. Definition of a Class for Sinoatrial Node Object
-<p>This section of the code defines the <code>SinoAtrialNode</code> class, allowing for the creation of a Sinoatrial Node object, which represents a central component of the heart's electrical system. This class structure enables encapsulation and modularity within the code.</p>
+#### 1. Definition of Sinoatrial Node Class
+<p>This section of the code defines the <code>SinoAtrialNode</code> class, allowing for the creation of a SAN object, which represents a central component of the heart's electrical system. This class structure enables encapsulation and modularity within the code.</p>
 
 <p>
-In the Sinoatrial Node (SAN) model, ACh and Nor represent the concentrations of acetylcholine and norepinephrine, respectively, two neurotransmitters that play crucial roles in the regulation of heart rate. Acetylcholine (ACh) is usually involved in slowing down the heart rate by reducing the pacemaker current, while norepinephrine (Nor) tends to increase the heart rate by enhancing the pacemaker current. These neurotransmitters interact with specific receptors in the cardiac cells, modulating the ionic currents and thus the overall behavior of the SAN. In the context of the model, the constants c[9] and c[10] are assigned to ACh and Nor respectively, allowing their concentrations to be manipulated and thus to simulate various physiological conditions, such as stress or relaxation, that would alter the concentrations of these neurotransmitters.
+In the SAN model, ACh and Nor represent the concentrations of acetylcholine and norepinephrine, respectively, two neurotransmitters that play crucial roles in the regulation of heart rate. Acetylcholine (ACh) is usually involved in slowing down the heart rate by reducing the pacemaker current, while norepinephrine (Nor) tends to increase the heart rate by enhancing the pacemaker current. These neurotransmitters interact with specific receptors in the cardiac cells, modulating the ionic currents and thus the overall behavior of the SAN. In the context of the model, the constants c[9] and c[10] are assigned to ACh and Nor respectively, allowing their concentrations to be manipulated and thus to simulate various physiological conditions, such as stress or relaxation, that would alter the concentrations of these neurotransmitters.
 </p>
 
 ```python
