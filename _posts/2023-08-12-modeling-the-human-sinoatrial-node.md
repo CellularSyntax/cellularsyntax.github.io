@@ -21,6 +21,84 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 
 #### 2.1. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model
 
+<p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na+), potassium (K+), and leak currents. The total current flowing through the membrane is given by the equation:</p>
+
+\[ \frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}})) \]
+
+<p>where</p>
+
+<ul>
+  <li>\( V \) is the membrane potential,</li>
+  <li>\( C_m \) is the membrane capacitance,</li>
+  <li>\( I_{\text{ext}} \) is an external current,</li>
+  <li>\( I_{\text{Na}} \) is the sodium current,</li>
+  <li>\( I_{\text{K}} \) is the potassium current,</li>
+  <li>\( I_{\text{L}} \) is the leak current.</li>
+</ul>
+
+<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
+
+\[ I_{\text{Na}} = g_{\text{Na}} \cdot m^3 \cdot h \cdot (V - E_{\text{Na}}) \]
+
+
+<p>where</p>
+
+<ul>
+  <li>\( I_{\text{Na}} \) is the sodium current,</li>
+  <li>\( g_{\text{Na}} \) is the maximum sodium conductance,</li>
+  <li>\( m \) is the activation gate variable,</li>
+  <li>\( h \) is the inactivation gate variable,</li>
+  <li>\( V \) is the membrane potential,</li>
+  <li>\( E_{\text{Na}} \) is the sodium Nernst potential.</li>
+</ul>
+
+<p>The time evolution of the gating variables 'm' and 'h' is described by:</p>
+
+\[ \frac{dm}{dt} = \alpha_m(V) \cdot (1-m) - \beta_m(V) \cdot m \]
+\[ \frac{dh}{dt} = \alpha_h(V) \cdot (1-h) - \beta_h(V) \cdot h \]
+
+<p>Here's a table summarizing these parameters with their common values:</p>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Common Values</th>
+  </tr>
+  <tr>
+    <td>\( g_{\text{Na}} \)</td>
+    <td>Maximum sodium conductance</td>
+    <td>120 mS/cm²</td>
+  </tr>
+  <tr>
+    <td>\( E_{\text{Na}} \)</td>
+    <td>Sodium Nernst potential</td>
+    <td>+115 mV</td>
+  </tr>
+  <tr>
+    <td>\( \alpha_m \)</td>
+    <td>Rate constant for m activation</td>
+    <td>Varies with \( V \)</td>
+  </tr>
+  <tr>
+    <td>\( \beta_m \)</td>
+    <td>Rate constant for m inactivation</td>
+    <td>Varies with \( V \)</td>
+  </tr>
+  <tr>
+    <td>\( \alpha_h \)</td>
+    <td>Rate constant for h activation</td>
+    <td>Varies with \( V \)</td>
+  </tr>
+  <tr>
+    <td>\( \beta_h \)</td>
+    <td>Rate constant for h inactivation</td>
+    <td>Varies with \( V \)</td>
+  </tr>
+</table>
+
+<p>By exploring the intricacies of the Na+ channel within the Hodgkin-Huxley framework, we can glean essential insights into how ion channels are implemented, providing a foundational understanding that extends to more complex models like those of the human sinoatrial node cell.</p>
+
 #### 2.2. Cell Capacitance and Dimensions
 <p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model [<a href="#ref2"><strong>2</strong></a>].</p>
 
