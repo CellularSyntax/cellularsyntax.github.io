@@ -22,7 +22,7 @@ But why does this matter? It's more than a scientific curiosity. The model provi
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
-You can download all code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a>.
+You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a>.
 
 ### 2. Model Foundation
 <p>The starting point of the work by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] was the rabbit SAN cell model from Severi et al. [<a href="#ref2"><strong>2</strong></a>], developed as a Hodgkin-Huxley-type model. This model utilizes differential equations to describe how ionic current flow through the cell membrane gives rise to the electrical activity in the cell, providing a foundational approach to understanding membrane potential dynamics. The Fabbri et al. model [<a href="#ref1"><strong>1</strong></a>] integrated enhancements derived from electrophysiological data of human cells, along with automatic optimization for unknown parameters. Influenced by various human cell data, it was constrained by AP parameters, voltage clamp data, effects of <i>I<sub>f</sub></i> blockers, and Ca<sup>2+</sup> transient data. <strong><a href="#fig1">Figure 1</a></strong> shows a schematic diagram of the human SAN AP model, emphasizing the compartmentalization essential for calcium handling and detailing the ionic currents, pumps, and exchangers inherited from the parent model or developed independently.</p>
@@ -567,7 +567,7 @@ plt.show()
 <br/>
 
 ### 7. Conclusions
-<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. Here's a summary of the main lessons:</p>
+<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository here. Here's a summary of the main lessons:</p>
 <ul>
   <li><strong>Understanding the Fundamental Principles of the SAN Model</strong>: We have laid out the core concepts and mechanisms behind the SAN model, diving into its intricacies and how it represents the beating of the heart.</li>
   <li><strong>Modeling Ion Channels in the Hodgkin-Huxley Type Model</strong>: By examining the Hodgkin-Huxley model, we've learned how ion channels are effectively portrayed in the cell membrane, shedding light on the cell's electrophysiology.</li>
