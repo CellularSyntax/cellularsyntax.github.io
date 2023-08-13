@@ -4,7 +4,7 @@
 <div style="display: flex; align-items: flex-start;">
   <div style="margin-right: 20px; width: 30%; font-size:10pt; text-align:center">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 100%; border-radius: 50%;">
-    <p><strong>Max Haberbusch</strong></p>
+    <p style="margin-bottom:0px"><strong>Max Haberbusch</strong></p>
     <p><a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> | 
       <a href="https://github.com/CellularSyntax" target="_blank">GitHub</a> | 
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/">LinkedIn</a> | 
