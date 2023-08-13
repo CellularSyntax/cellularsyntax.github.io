@@ -47,7 +47,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <img id="fig2" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_membrane_potential.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
 <div class="figcap"><strong>Figure 2</strong> (<strong>A</strong>) The simulated action potential of a single human SAN (sinoatrial node) cell is shown as a black thick line, contrasted with the experimentally recorded action potentials from three individual isolated human SAN cells, represented by the grey traces. The experimental data were sourced from Verkerk et al. [<a href="#ref4">4</a>] and Verkerk and Wilders [<a href="#ref5"><strong>5</strong></a>]. (<strong>B</strong>) A comparison between the simulated (black thick line) and experimentally recorded (grey line) Ca<sup>2+</sup> transient is depicted. Experimental data for this was obtained from Verkerk et al. [<a href="#ref6">6</a>]. Reproduced from Fabbri et al. [<a href="#ref1"><strong>1</strong></a>, p.2373]
 </div>
-
+<br/>
 ### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
