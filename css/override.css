@@ -83,19 +83,20 @@ h1, h2, h3, h4{
 
 @media(min-width: 600px){
   #professional_projects_container{
-      flex-direction: row !important;
+    flex-direction: row !important;
   }
   #professional_projects_container img{
-     width: 26% !important;
+    width: 26% !important;
+    margin-right: 25px;
    }
 }
 
 @media(min-width: 600px){
   #about_blog_container{
-      flex-direction: row !important;
+    flex-direction: row !important;
   }
   #about_blog_container img{
-     width: 22% !important;
-     margin-right: 33px !important;
+    width: 22% !important;
+    margin-right: 33px !important;
    }
 }
