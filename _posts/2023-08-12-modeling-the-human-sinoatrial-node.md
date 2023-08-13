@@ -19,8 +19,77 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 </div>
 <br/>
 
-#### 2.1. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model
-<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
+#### 2.1. Membrane Potential Dynamics in the Human SAN Model
+<p>The essence of modeling the electrical activity of the sinoatrial node (SAN) cell is captured in the representation of the membrane potential, \( V \), which describes the voltage difference across the cell membrane. This potential is the driving force behind the flow of ions through various channels and pumps, and it orchestrates the complex rhythm of the heart's natural pacemaker.</p>
+
+<p>In the Hodgkin-Huxley-type models, including the one utilized by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>], the membrane potential is described by a differential equation that considers the cumulative effects of multiple ionic currents (<a href="#tab1"><strong>Table 1</strong></a>). These currents, each mediated by specific channels or exchangers, contribute to the overall charge movement across the membrane.</p>
+
+<p>The membrane potential equation for the human SAN cell model is given by:</p>
+
+<p>
+  \[ \frac{dV}{dt} = -\frac{1}{C} \cdot \left( I_{\text{f}} + I_{\text{CaL}} + I_{\text{CaT}} + I_{\text{Kr}} + I_{\text{Ks}} + I_{\text{K,ACh}} + I_{\text{to}} + I_{\text{Na}} + I_{\text{NaK}} + I_{\text{NaCa}} + I_{\text{Kur}} \right) \]
+</p>
+
+<p>Here, \( \frac{dV}{dt} \) is the rate of change of the membrane potential with respect to time, \( C \) is the membrane capacitance, and the terms inside the parentheses represent the various ionic currents that play a vital role in the depolarization and repolarization phases of the action potential.</p>
+
+<p>This equation elegantly encapsulates the interactions and dynamics of the SAN cell membrane, highlighting the role of each ion channel in generating the characteristic rhythmic electrical activity of the SAN</p>
+
+
+<table border="1" cellpadding="5" cellspacing="0" id="tab1">
+  <tr>
+    <th>Current</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>\(I_{\text{f}}\)</td>
+    <td>Funny current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{CaL}}\)</td>
+    <td>L-type calcium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{CaT}}\)</td>
+    <td>T-type calcium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{Kr}}\)</td>
+    <td>Rapid delayed rectifier potassium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{Ks}}\)</td>
+    <td>Slow delayed rectifier potassium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{K,ACh}}\)</td>
+    <td>Potassium current modulated by acetylcholine</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{to}}\)</td>
+    <td>Transient outward potassium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{Na}}\)</td>
+    <td>Sodium current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{NaK}}\)</td>
+    <td>Sodium-potassium pump current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{NaCa}}\)</td>
+    <td>Sodium-calcium exchanger current</td>
+  </tr>
+  <tr>
+    <td>\(I_{\text{Kur}}\)</td>
+    <td>Ultra-rapid delayed rectifier potassium current</td>
+  </tr>
+</table>
+<div class="figcap"><strong>Table 1</strong> Ionic Currents in the Human SAN Model.</div>
+<br/>
+
+#### 2.2. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model
+<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in infamous the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
 
 <p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na+), potassium (K+), and leak currents. The total current flowing through the membrane is given by the equation:</p>
 
@@ -57,7 +126,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <p>\[ \frac{dm}{dt} = \alpha_m(V) \cdot (1-m) - \beta_m(V) \cdot m \]</p>
 <p>\[ \frac{dh}{dt} = \alpha_h(V) \cdot (1-h) - \beta_h(V) \cdot h \]</p>
 
-<p>The table below (<a href="#tab1"><strong>Table 1</strong></a>) summarizes these parameters with their common values.</p>
+<p>The table below (<a href="#tab2"><strong>Table 2</strong></a>) summarizes these parameters with their common values.</p>
 <table border="1" cellpadding="5" id="tab1" style="padding-bottom:10px">
   <tr>
     <th>Parameter</th>
@@ -100,32 +169,32 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     <td>Varies with \( V \)</td>
   </tr>
 </table>
-<div class="figcap"><strong>Table 1</strong> Parameters used in the Hodgkin-Huxley model, including descriptions and common values for the sodium channel and membrane capacitance.</div>
+<div class="figcap"><strong>Table 2</strong> Parameters used in the Hodgkin-Huxley model, including descriptions and common values for the sodium channel and membrane capacitance.</div>
 <br/>
 
 <p>By exploring the intricacies of the Na+ channel within the Hodgkin-Huxley framework, we can glean essential insights into how ion channels are implemented, providing a foundational understanding that extends to more complex models like those of the human sinoatrial node cell.</p>
 
-#### 2.2. Cell Capacitance and Dimensions
+#### 2.3. Cell Capacitance and Dimensions
 <p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model [<a href="#ref2"><strong>2</strong></a>].</p>
 
-#### 2.3. Membrane Currents
+#### 2.4. Membrane Currents
 <p>Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] specified sarcolemmal currents flowing through ionic channels, pumps, and exchangers shown in <strong><a href="#fig1">Figure 1</a></strong>, except for <i>I<sub>K,ACh</sub></i>. Adjustments were made for various currents such as the funny current (<i>I<sub>f</sub></i>), rapid delayed rectifier K<sup>+</sup> current (<i>I<sub>Kr</sub></i>), slow delayed rectifier K<sup>+</sup> current (<i>I<sub>Ks</sub></i>), ultrarapid delayed rectifier K<sup>+</sup> current (<i>I<sub>Kur</sub></i>), and others. These modifications included changes in conductance, implementation of kinetic schemes, and adjustments based on experimental findings or automatic optimization.</p>
 
-#### 2.4. Calcium Handling
+#### 2.5. Calcium Handling
 <p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model [<a href="#ref2"><strong>2</strong></a>], but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (<i>J<sub>up</sub></i>), SR Ca<sup>2+</sup> release (<i>J<sub>rel</sub></i>), and Ca<sup>2+</sup> diffusion and buffers.</p>
 
-#### 2.5. Ion Concentrations
+#### 2.6. Ion Concentrations
 <p>The model by Fabbri et al. included a detailed description of Ca<sup>2+</sup> dynamics for four compartments and fixed intracellular Na<sup>+</sup> concentration, following the whole cell configuration used in certain experiments.</p>
 
 <p>Overall, the model by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] integrates detailed revisions to accurately represent human SAN cells, reflecting experimental data, and making specific modifications to currents, capacitance, Ca<sup>2+</sup> handling, and ion concentrations.</p>
 
-#### 2.6. Autonomic Modulation of the Sinoatrial Node
+#### 2.7. Autonomic Modulation of the Sinoatrial Node
 <p>The autonomic modulation of the SA node is a critical aspect of cardiac function, allowing the heart rate to be precisely regulated in response to various physiological demands. The autonomic nervous system (ANS) influences the SA node through both its sympathetic and parasympathetic branches. Sympathetic stimulation increases the heart rate by enhancing the pacemaker currents within the SA node, preparing the body for stress or physical activity. In contrast, parasympathetic stimulation, mediated mainly through acetylcholine, reduces the heart rate by inhibiting these currents, promoting a state of rest and recovery. The balance between these two branches ensures that the heart rate is finely tuned to meet the body's needs, whether it is responding to exercise, stress, or relaxation. The modulation of the SA node by the ANS is a complex interaction involving neurotransmitters, receptors, ionic channels, and cellular signaling pathways. It is a fundamental aspect of cardiovascular regulation, with implications for overall heart health and disease management.
 </p>
 
 <p>The effects of 10 nM ACh on <em>I<sub>f</sub></em> activation (–7.5 mV shift in voltage dependence of activation), <em>I<sub>CaL</sub></em> (3.1% reduction of maximal conductance) and SR Ca<sup>2+</sup> uptake (7% decrease of maximum activity) were all adopted from the parent model [<a href="#ref2"><strong>2</strong></a>]. The administration of ACh also activates <em>I<sub>K,ACh</sub></em>, which is zero in the default model. The <em>I<sub>K,ACh</sub></em> formulation was derived from the parent model. The maximal conductance <em>g<sub>K,ACh</sub></em> was set to 3.45 nS (reduced by 77.5%) to achieve an overall reduction of the spontaneous rate by 20.8% upon administration of 10 nM ACh, as observed by Bucchi et al.  [<a href="#ref3"><strong>3</strong></a>] in rabbit SAN cells. The targets of isoprenaline (Iso), an antagonist of the sympathetic neurotransmitter Noradrenaline, are <em>I<sub>f</sub></em>, <em>I<sub>CaL</sub></em>, <em>I<sub>NaK</sub></em>, maximal Ca<sup>2+</sup> uptake and <em>I<sub>Ks</sub></em>. Changes in currents were adopted from the parent model, except for the modulation of <em>I<sub>CaL</sub></em>, where the effect of Iso induced a slightly smaller decrease of the slope factor <em>k<sub>dL</sub></em> (−27% with respect to control conditions, instead of the −31% assumed by the parent model). The <em>I<sub>CaL</sub></em> current was modulated to fit the experimental data reported by Bucchi et al. [<a href="#ref3"><strong>3</strong></a>] on rabbit SAN cells (26.3±5.4%; mean±SEM, n=7) for the same Iso concentration [<a href="#ref1"><strong>1</strong></a>].</p>
 
-#### 2.7. Action Potential Waveform
+#### 2.8. Action Potential Waveform
 <p>The simulated action potential (AP) waveform has been shown to be in good alignment with the available experimental data, as depicted in <strong><a href="#fig2">Figure 2</a></strong>. The majority of the quantitative factors that detail the morphology of the AP, including cycle length (CL), MDP (maximum diastolic potential), APD<sub>90</sub> (action potential duration at 90% repolarization), and DDR<sub>100</sub> (100% diastolic depolarization rate), fall within the mean ± SD (standard deviation) range of the experimentally observed values [<a href="#ref4"><strong>4</strong></a>]. Specifically, the model's AP is defined by a CL of 814 ms, corresponding to a beating frequency of 74 beats per minute. Notably, the model displays a higher (dV/dt)<sub>max</sub> and overshoot (OS), and a more prolonged APD<sub>20</sub>, which are predicted characteristics outside the experimental mean ± SD range.</p>
 
 <img id="fig2" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_membrane_potential.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
