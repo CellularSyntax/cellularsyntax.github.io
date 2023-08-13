@@ -20,7 +20,7 @@
 
 ## Current Projects
 <div style="display: flex; align-items: flex-start;">
-<img src="https://itis.swiss/assets/PageMedia/EventPage/neuheart/Logo-neuHeart__ResizedImageWzIwNCwxNDRd.jpg" alt="NeuHeart Project Logo" style="width:100%; margin-right:10px">
+<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/neuheart_logo.png" alt="NeuHeart Project Logo" style="width:100%; margin-right:10px">
 <p>One of my proudest achievements is my work on the project <a href="http://www.neuhearth2020.eu/" target="_blank">NeuHeart - A neuroprosthesis to Restore the Vagal-Cardiac Closed-Loop Connection after Heart Transplantation</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
 </div>
 
