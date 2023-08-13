@@ -71,12 +71,12 @@ h1, h2, h3, h4{
 
 @media(min-width: 600px){
   #welcome_container {
-      flex-direction: row;
+      flex-direction: row !important;
   }
 }
 
 @media(min-width: 600px){
   #professional_projects_container{
-      flex-direction: row;
+      flex-direction: row !important;
   }
 }
