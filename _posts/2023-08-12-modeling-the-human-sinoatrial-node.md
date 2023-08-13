@@ -35,7 +35,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <p>This equation elegantly encapsulates the interactions and dynamics of the SAN cell membrane, highlighting the role of each ion channel in generating the characteristic rhythmic electrical activity of the SAN</p>
 
 
-<table border="1" cellpadding="5" cellspacing="0" id="tab1">
+<table border="1" cellpadding="5" cellspacing="0" id="tab1" style="padding-bottom:10px">
   <tr>
     <th>Current</th>
     <th>Description</th>
