@@ -101,9 +101,9 @@ You can download all the code from this article from my GitHub repository <a hre
 <br/>
 
 #### 2.2. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model
-<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in infamous the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
+<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na<sup>+</sup>) channel in infamous the Hodgkin-Huxley model. In this well-known model, the Na<sup>+</sup> channel's behavior is governed by specific gating variables, and the flow of Na<sup>+</sup> ions across the membrane is given by the equation:</p>
 
-<p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na+), potassium (K+), and leak currents. The total current flowing through the membrane is given by the equation:</p>
+<p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na<sup>+</sup>), potassium (K<sup>+</sup>), and leak currents. The total current flowing through the membrane is given by the equation:</p>
 
 <p>\[ \frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}})) \]</p>
 
@@ -118,7 +118,7 @@ You can download all the code from this article from my GitHub repository <a hre
   <li>\( I_{\text{L}} \) is the leak current.</li>
 </ul>
 
-<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
+<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na<sup>+</sup>) channel in the Hodgkin-Huxley model. In this well-known model, the Na<sup>+</sup> channel's behavior is governed by specific gating variables, and the flow of Na<sup>+</sup> ions across the membrane is given by the equation:</p>
 
 <p>\[ I_{\text{Na}} = g_{\text{Na}} \cdot m^3 \cdot h \cdot (V - E_{\text{Na}}) \]</p>
 
@@ -184,7 +184,7 @@ You can download all the code from this article from my GitHub repository <a hre
 <div class="figcap"><strong>Table 2</strong> Parameters used in the Hodgkin-Huxley model, including descriptions and common values for the sodium channel and membrane capacitance.</div>
 <br/>
 
-<p>By exploring the intricacies of the Na+ channel within the Hodgkin-Huxley framework, we can glean essential insights into how ion channels are implemented, providing a foundational understanding that extends to more complex models like those of the human sinoatrial node cell.</p>
+<p>By exploring the intricacies of the Na<sup>+</sup> channel within the Hodgkin-Huxley framework, we can glean essential insights into how ion channels are implemented, providing a foundational understanding that extends to more complex models like those of the human sinoatrial node cell.</p>
 
 #### 2.3. Cell Capacitance and Dimensions
 <p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model [<a href="#ref2"><strong>2</strong></a>].</p>
@@ -204,7 +204,7 @@ You can download all the code from this article from my GitHub repository <a hre
 <p>The autonomic modulation of the SA node is a critical aspect of cardiac function, allowing the heart rate to be precisely regulated in response to various physiological demands. The autonomic nervous system (ANS) influences the SA node through both its sympathetic and parasympathetic branches. Sympathetic stimulation increases the heart rate by enhancing the pacemaker currents within the SA node, preparing the body for stress or physical activity. In contrast, parasympathetic stimulation, mediated mainly through acetylcholine, reduces the heart rate by inhibiting these currents, promoting a state of rest and recovery. The balance between these two branches ensures that the heart rate is finely tuned to meet the body's needs, whether it is responding to exercise, stress, or relaxation. The modulation of the SA node by the ANS is a complex interaction involving neurotransmitters, receptors, ionic channels, and cellular signaling pathways. It is a fundamental aspect of cardiovascular regulation, with implications for overall heart health and disease management.
 </p>
 
-<p>The effects of 10 nM ACh on <em>I<sub>f</sub></em> activation (–7.5 mV shift in voltage dependence of activation), <em>I<sub>CaL</sub></em> (3.1% reduction of maximal conductance) and SR Ca<sup>2+</sup> uptake (7% decrease of maximum activity) were all adopted from the parent model [<a href="#ref2"><strong>2</strong></a>]. The administration of ACh also activates <em>I<sub>K,ACh</sub></em>, which is zero in the default model. The <em>I<sub>K,ACh</sub></em> formulation was derived from the parent model. The maximal conductance <em>g<sub>K,ACh</sub></em> was set to 3.45 nS (reduced by 77.5%) to achieve an overall reduction of the spontaneous rate by 20.8% upon administration of 10 nM ACh, as observed by Bucchi et al.  [<a href="#ref3"><strong>3</strong></a>] in rabbit SAN cells. The targets of isoprenaline (Iso), an antagonist of the sympathetic neurotransmitter Noradrenaline, are <em>I<sub>f</sub></em>, <em>I<sub>CaL</sub></em>, <em>I<sub>NaK</sub></em>, maximal Ca<sup>2+</sup> uptake and <em>I<sub>Ks</sub></em>. Changes in currents were adopted from the parent model, except for the modulation of <em>I<sub>CaL</sub></em>, where the effect of Iso induced a slightly smaller decrease of the slope factor <em>k<sub>dL</sub></em> (−27% with respect to control conditions, instead of the −31% assumed by the parent model). The <em>I<sub>CaL</sub></em> current was modulated to fit the experimental data reported by Bucchi et al. [<a href="#ref3"><strong>3</strong></a>] on rabbit SAN cells (26.3±5.4%; mean±SEM, n=7) for the same Iso concentration [<a href="#ref1"><strong>1</strong></a>].</p>
+<p>The effects of \(10 \, \text{nM ACh}\) on <em>\(I_f\)</em> activation (\(-7.5 \, \text{mV}\) shift in voltage dependence of activation), <em>\(I_{CaL}\)</em> (\(3.1\%\) reduction of maximal conductance) and \(\text{SR} \, \text{Ca}^{2+}\) uptake (\(7\%\) decrease of maximum activity) were all adopted from the parent model [<a href="#ref2"><strong>2</strong></a>]. The administration of ACh also activates <em>\(I_{K,ACh}\)</em>, which is zero in the default model. The <em>\(I_{K,ACh}\)</em> formulation was derived from the parent model. The maximal conductance <em>\(g_{K,ACh}\)</em> was set to \(3.45 \, \text{nS}\) (reduced by \(77.5\%\) ) to achieve an overall reduction of the spontaneous rate by \(20.8\%\) upon administration of \(10 \, \text{nM ACh}\), as observed by Bucchi et al.  [<a href="#ref3"><strong>3</strong></a>] in rabbit SAN cells. The targets of isoprenaline (Iso), an antagonist of the sympathetic neurotransmitter Noradrenaline, are <em>\(I_f\)</em>, <em>\(I_{CaL}\)</em>, <em>\(I_{NaK}\)</em>, maximal \(\text{Ca}^{2+}\) uptake and <em>\(I_{Ks}\)</em>. Changes in currents were adopted from the parent model, except for the modulation of <em>\(I_{CaL}\)</em>, where the effect of Iso induced a slightly smaller decrease of the slope factor \(k_{dL}\) (\(-27\%\) with respect to control conditions, instead of the \(-31\%\) assumed by the parent model). The <em>\(I_{CaL}\)</em> current was modulated to fit the experimental data reported by Bucchi et al. [<a href="#ref3"><strong>3</strong></a>] on rabbit SAN cells (\(26.3 \pm 5.4\%\) ; mean ± SEM, \(n=7\)) for the same Iso concentration [<a href="#ref1"><strong>1</strong></a>].</p>
 
 #### 2.8. Action Potential Waveform
 <p>The simulated action potential (AP) waveform has been shown to be in good alignment with the available experimental data, as depicted in <strong><a href="#fig2">Figure 2</a></strong>. The majority of the quantitative factors that detail the morphology of the AP, including cycle length (CL), MDP (maximum diastolic potential), APD<sub>90</sub> (action potential duration at 90% repolarization), and DDR<sub>100</sub> (100% diastolic depolarization rate), fall within the mean ± SD (standard deviation) range of the experimentally observed values [<a href="#ref4"><strong>4</strong></a>]. Specifically, the model's AP is defined by a CL of 814 ms, corresponding to a beating frequency of 74 beats per minute. Notably, the model displays a higher (dV/dt)<sub>max</sub> and overshoot (OS), and a more prolonged APD<sub>20</sub>, which are predicted characteristics outside the experimental mean ± SD range.</p>
@@ -268,7 +268,7 @@ sizeConstants = 116
 ```
 
 #### 5.2. Create Legends and Labels
-The <code>createLegends</code> function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
+The <code>createLegends</code> function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (<code>voi</code>) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
 
 ```python
 def createLegends():
@@ -308,7 +308,7 @@ def initConsts():
 ```
 
 #### 5.4. Compute Rates
-The <code>computeRates</code> function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
+The <code>computeRates</code> function computes the rate of change of the states based on the current values of states, constants, and variable of integration (<code>voi</code>). This function is essential for the numerical integration step where the system evolves over time.
 
 ```python
 def computeRates(voi, states, constants):
@@ -580,7 +580,7 @@ plt.show()
 
 ### 8. Outlook
 <p>Alright, folks, buckle up! Now that we've got our shiny Python implementation of the SAN model, things are about to get wild! 🚀 Next stop: Exploring the thrilling world of noradrenaline and acetylcholine. How do these sassy molecules shape the depolarization rate of the sinoatrial node? Hold onto your lab coats, because we're diving into that mystery in the next blog post. Get ready for a heart-pounding adventure that's bound to get your pulse racing! 🧪💓</p>
-<p>Stay tuned, science fans, and keep those neurons firing! 🧠💥</p>
+<p>Stay tuned, and keep those neurons firing! 🧠💥</p>
 
 ### References
 <ol>
