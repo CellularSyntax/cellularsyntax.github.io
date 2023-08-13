@@ -2,7 +2,13 @@
 
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 30%; border-radius: 50%; margin-right: 20px;">
+  <div style="margin-right: 20px; width: 30%;">
+    <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 100%; border-radius: 50%;">
+    <p>Max Haberbusch</p>
+    <p><a href="mailto:max.haberbusch@meduniwien.ac.at">max.haberbusch@meduniwien.ac.at</a></p>
+    <p><a href="https://github.com/CellularSyntax" target="_blank">https://github.com/CellularSyntax</a></p>
+    <p>@cellular_syntax</p>
+  </div>
   <div>
     <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
     <p>With an undergraduate degree in computer science 💻 and a Ph.D. in biomedical engineering 🧪, my passion lies in computational modeling in medicine and biology. From the precise control of neurons 🧠 to the rhythmic beating of the heart ❤️, I find excitement in unraveling the complex mechanisms that make us tick.</p>
