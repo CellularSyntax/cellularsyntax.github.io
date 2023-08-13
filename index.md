@@ -1,5 +1,5 @@
 <div id="welcome_container" style="display: flex; align-items: flex-start; flex-direction:column">
-  <div style="margin-right: 15px; font-size:8pt; text-align:center">
+  <div style="margin-right: 15px; font-size:8pt; text-align:center; margin-bottom: 20px">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 85%; border-radius: 50%; margin-top:7px">
     <p style="margin-bottom:0px; font-size:11pt"><strong>Max Haberbusch</strong></p>
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a> | 
