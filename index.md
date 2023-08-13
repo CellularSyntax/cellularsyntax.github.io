@@ -23,7 +23,7 @@
 
 ## About the Blog
 <div id="about_blog_container" style="display: flex; align-items: center; flex-direction:column">
-<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/artificial-intelligence.png" alt="artificial intelligence illustration" style="width:65%; margin-right:57px; margin-bottom:20px">
+<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/artificial-intelligence.png" alt="artificial intelligence illustration" style="width:65%; margin-bottom:20px">
 <div>
 <p>In this blog, I'll be sharing coding projects that span the realms of cardiovascular modeling, neuronal modeling, machine learning in medicine, and biomedical signal processing. Whether it's implementing models published in literature or sharing insights from my daily research, I aim to make this space educational and inspiring, especially for those new to the computational modeling game.</p>
 <p>Feel free to explore and learn. If you're interested in collaborations or simply want to chat about modeling stuff, I'd be thrilled to hear from you! Reach out to me via email 📧 at <a href="mailto:max.haberbusch@meduniwien.ac.at">max.haberbusch@meduniwien.ac.at</a> or connect with me on <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a>.</p>
