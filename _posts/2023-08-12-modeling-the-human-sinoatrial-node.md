@@ -24,7 +24,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <img id="fig1" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_schematic.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
 <div class="figcap"><strong>Figure 1</strong> The cell is segmented into three areas: the subsarcolemma, cytosol, and sarcoplasmic reticulum (SR), with the SR further split into junctional and network sections. The handling of Calcium ions (Ca<sup>2+</sup>) is facilitated by two diffusion processes (<i>J<sub>diff</sub></i>, from subsarcolemmal to cytosol, and <i>J<sub>tr</sub></i>, from network SR to junctional SR), the uptake of Ca<sup>2+</sup> into the network SR by the SERCA pump (<i>J<sub>up</sub></i>), and the release of Ca<sup>2+</sup> from the junctional SR into the subsarcolemmal space through RyRs. There are 11 various ionic channels, pumps, and exchangers through which Sodium, Calcium, and Potassium ions move across the sarcolemmal membrane. Reproduced from Fabbri et al. [<a href="#ref1"><strong>1</strong></a>, p.2367]
 </div>
-
+<br/>
 #### Calcium Handling
 <p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model [<a href="#ref2"><strong>2</strong></a>], but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (<i>J<sub>up</sub></i>), SR Ca<sup>2+</sup> release (<i>J<sub>rel</sub></i>), and Ca<sup>2+</sup> diffusion and buffers.</p>
 
