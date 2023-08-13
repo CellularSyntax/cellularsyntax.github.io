@@ -2,8 +2,8 @@
 
 
 <div style="display: flex; align-items: flex-start;">
-  <div style="margin-right: 30px; font-size:8pt; text-align:center">
-    <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 701px; border-radius: 50%; margin-top:7px">
+  <div style="margin-right: 10px; font-size:8pt; text-align:center">
+    <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 85%; border-radius: 50%; margin-top:7px">
     <p style="margin-bottom:0px; font-size:11pt"><strong>Max Haberbusch</strong></p>
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a> | 
       <a href="https://www.researchgate.net/profile/Max-Haberbusch" target="_blank">ResearchGate</a> | 
@@ -20,7 +20,7 @@
 
 ## Professional Projects
 <div style="display: flex; align-items: center;">
-<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/neuheart_logo.png" alt="NeuHeart Project Logo" style="width:185px; margin-right:15px">
+<img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/neuheart_logo.png" alt="NeuHeart Project Logo" style="width:78%; margin-right:10px">
 <p>One of my proudest achievements is my work on the European Horizon 2020 project <a href="https://cordis.europa.eu/project/id/824071" target="_blank">NeuHeart - A neuroprosthesis to Restore the Vagal-Cardiac Closed-Loop Connection after Heart Transplantation</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
 </div>
 
