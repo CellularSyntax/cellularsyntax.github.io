@@ -74,8 +74,7 @@ h1, h2, h3, h4{
       flex-direction: row !important;
   }
    #welcome_container div{
-     margin-right: 0px !important;
-     margin-bottom: 30px !important;
+     margin-right: 30px !important;
    }
 }
 
