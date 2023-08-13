@@ -24,7 +24,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 
 <p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na+), potassium (K+), and leak currents. The total current flowing through the membrane is given by the equation:</p>
 
-\( \frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}})) \)
+<p>\( \frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}})) \)</p>
 
 <p>where</p>
 
