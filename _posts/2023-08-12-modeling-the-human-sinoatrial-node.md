@@ -1,6 +1,6 @@
 ## Modeling the Human Sinoatrial Node
 
-### Introduction
+### 1. Introduction
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
 In 2017, a groundbreaking study by Alan Fabbri and colleagues [<a href="#ref1"><strong>1</strong></a>] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in <i>The Journal of Physiology</i>, this work doesn't merely echo the rhythm of life; it deciphers its code.
@@ -11,7 +11,7 @@ But why does this matter? It's more than a scientific curiosity. The model provi
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
-#### Model Foundation
+### 2. Model Foundation
 <p>The starting point of the work by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] was the rabbit SAN cell model from Severi et al. [<a href="#ref2"><strong>2</strong></a>], developed as a Hodgkin-Huxley-type model. This model utilizes differential equations to describe how ionic current flow through the cell membrane gives rise to the electrical activity in the cell, providing a foundational approach to understanding membrane potential dynamics. The Fabbri et al. model [<a href="#ref1"><strong>1</strong></a>] integrated enhancements derived from electrophysiological data of human cells, along with automatic optimization for unknown parameters. Influenced by various human cell data, it was constrained by AP parameters, voltage clamp data, effects of <i>I<sub>f</sub></i> blockers, and Ca<sup>2+</sup> transient data. <strong><a href="#fig1">Figure 1</a></strong> shows a schematic diagram of the human SAN AP model, emphasizing the compartmentalization essential for calcium handling and detailing the ionic currents, pumps, and exchangers inherited from the parent model or developed independently.</p>
 
 <img id="fig1" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_schematic.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
@@ -19,27 +19,27 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 </div>
 <br/>
 
-#### Cell Capacitance and Dimensions
+#### 2.1. Cell Capacitance and Dimensions
 <p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model [<a href="#ref2"><strong>2</strong></a>].</p>
 
-#### Membrane Currents
+#### 2.2. Membrane Currents
 <p>Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] specified sarcolemmal currents flowing through ionic channels, pumps, and exchangers shown in <strong><a href="#fig1">Figure 1</a></strong>, except for <i>I<sub>K,ACh</sub></i>. Adjustments were made for various currents such as the funny current (<i>I<sub>f</sub></i>), rapid delayed rectifier K<sup>+</sup> current (<i>I<sub>Kr</sub></i>), slow delayed rectifier K<sup>+</sup> current (<i>I<sub>Ks</sub></i>), ultrarapid delayed rectifier K<sup>+</sup> current (<i>I<sub>Kur</sub></i>), and others. These modifications included changes in conductance, implementation of kinetic schemes, and adjustments based on experimental findings or automatic optimization.</p>
 
-#### Calcium Handling
+#### 2.3. Calcium Handling
 <p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model [<a href="#ref2"><strong>2</strong></a>], but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (<i>J<sub>up</sub></i>), SR Ca<sup>2+</sup> release (<i>J<sub>rel</sub></i>), and Ca<sup>2+</sup> diffusion and buffers.</p>
 
-#### Ion Concentrations
+#### 2.4. Ion Concentrations
 <p>The model by Fabbri et al. included a detailed description of Ca<sup>2+</sup> dynamics for four compartments and fixed intracellular Na<sup>+</sup> concentration, following the whole cell configuration used in certain experiments.</p>
 
 <p>Overall, the model by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] integrates detailed revisions to accurately represent human SAN cells, reflecting experimental data, and making specific modifications to currents, capacitance, Ca<sup>2+</sup> handling, and ion concentrations.</p>
 
-#### Autonomic Modulation of the Sinoatrial Node
+#### 2.5. Autonomic Modulation of the Sinoatrial Node
 <p>The autonomic modulation of the SA node is a critical aspect of cardiac function, allowing the heart rate to be precisely regulated in response to various physiological demands. The autonomic nervous system (ANS) influences the SA node through both its sympathetic and parasympathetic branches. Sympathetic stimulation increases the heart rate by enhancing the pacemaker currents within the SA node, preparing the body for stress or physical activity. In contrast, parasympathetic stimulation, mediated mainly through acetylcholine, reduces the heart rate by inhibiting these currents, promoting a state of rest and recovery. The balance between these two branches ensures that the heart rate is finely tuned to meet the body's needs, whether it is responding to exercise, stress, or relaxation. The modulation of the SA node by the ANS is a complex interaction involving neurotransmitters, receptors, ionic channels, and cellular signaling pathways. It is a fundamental aspect of cardiovascular regulation, with implications for overall heart health and disease management.
 </p>
 
 <p>The effects of 10 nM ACh on <em>I<sub>f</sub></em> activation (–7.5 mV shift in voltage dependence of activation), <em>I<sub>CaL</sub></em> (3.1% reduction of maximal conductance) and SR Ca<sup>2+</sup> uptake (7% decrease of maximum activity) were all adopted from the parent model [<a href="#ref2"><strong>2</strong></a>]. The administration of ACh also activates <em>I<sub>K,ACh</sub></em>, which is zero in the default model. The <em>I<sub>K,ACh</sub></em> formulation was derived from the parent model. The maximal conductance <em>g<sub>K,ACh</sub></em> was set to 3.45 nS (reduced by 77.5%) to achieve an overall reduction of the spontaneous rate by 20.8% upon administration of 10 nM ACh, as observed by Bucchi et al.  [<a href="#ref3"><strong>3</strong></a>] in rabbit SAN cells. The targets of isoprenaline (Iso), an antagonist of the sympathetic neurotransmitter Noradrenaline, are <em>I<sub>f</sub></em>, <em>I<sub>CaL</sub></em>, <em>I<sub>NaK</sub></em>, maximal Ca<sup>2+</sup> uptake and <em>I<sub>Ks</sub></em>. Changes in currents were adopted from the parent model, except for the modulation of <em>I<sub>CaL</sub></em>, where the effect of Iso induced a slightly smaller decrease of the slope factor <em>k<sub>dL</sub></em> (−27% with respect to control conditions, instead of the −31% assumed by the parent model). The <em>I<sub>CaL</sub></em> current was modulated to fit the experimental data reported by Bucchi et al. [<a href="#ref3"><strong>3</strong></a>] on rabbit SAN cells (26.3±5.4%; mean±SEM, n=7) for the same Iso concentration [<a href="#ref1"><strong>1</strong></a>].</p>
 
-#### Simulation of Action Potential Waveform
+#### 2.6. Simulation of Action Potential Waveform
 <p>The simulated action potential (AP) waveform has been shown to be in good alignment with the available experimental data, as depicted in <strong><a href="#fig2">Figure 2</a></strong>. The majority of the quantitative factors that detail the morphology of the AP, including cycle length (CL), MDP (maximum diastolic potential), APD<sub>90</sub> (action potential duration at 90% repolarization), and DDR<sub>100</sub> (100% diastolic depolarization rate), fall within the mean ± SD (standard deviation) range of the experimentally observed values [<a href="#ref4"><strong>4</strong></a>]. Specifically, the model's AP is defined by a CL of 814 ms, corresponding to a beating frequency of 74 beats per minute. Notably, the model displays a higher (dV/dt)<sub>max</sub> and overshoot (OS), and a more prolonged APD<sub>20</sub>, which are predicted characteristics outside the experimental mean ± SD range.</p>
 
 <img id="fig2" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_membrane_potential.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
@@ -47,7 +47,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 </div>
 <br/>
 
-### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
+### 3. Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
 <ol>
   <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.<br/></li>
@@ -69,7 +69,7 @@ $ pip install numpy scipy matplotlib
 
 <p>Once you've gathered these components, you'll be well-prepared to follow along as we explore the computational intricacies of the human sinoatrial node model.</p>
 
-### Python Code Generation from CellML File
+### 4. Python Code Generation from CellML File
 <p>Generating Python code from a CellML file is a straightforward process, and OpenCOR makes it a breeze. With just one command, you can transform the Fabbri model into executable Python code. Here's how:</p>
 <ol>
   <li>Open your command line or shell interface.</li>
@@ -85,10 +85,10 @@ $ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.c
 <p>If you'd like to dive deeper into the code generation process and explore additional options, more detailed information is available on the <a href="https://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/code_generation.html" target="_blank" rel="noopener noreferrer">OpenCOR website</a>.</p>
 <p>With the code successfully generated, you're ready to move on to the next steps, including model simulation and analysis. Let's get coding!</p>
 
-### Understanding the Structure of the Generated Python Code
+### 5. Understanding the Structure of the Generated Python Code
  <p>This section offers an in-depth examination of the Python code generated to simulate the sinoatrial node. The code is structured into various functions, each tailored to handle distinct aspects of the SAN model. Below, each function is presented with a description of its purpose.</p>
 
-#### Size Definitions and Imports
+#### 5.1. Size Definitions and Imports
 This part of the code defines the sizes of various arrays that will be used throughout the code. It also imports all the functions from the math and NumPy modules.
 
 ```python
@@ -100,7 +100,7 @@ sizeStates = 33
 sizeConstants = 116
 ```
 
-#### Create Legends and Labels
+#### 5.2. Create Legends and Labels
 The <code>createLegends</code> function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
 
 ```python
@@ -121,7 +121,7 @@ def createLegends():
     return legend_states, legend_algebraic, legend_voi, legend_constants
 ```
 
-#### Initialize Constants and States
+#### 5.3. Initialize Constants and States
 The <code>initConsts</code> function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
 
 ```python
@@ -140,7 +140,7 @@ def initConsts():
     return states, constants
 ```
 
-#### Compute Rates
+#### 5.4. Compute Rates
 The <code>computeRates</code> function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
 
 ```python
@@ -160,7 +160,7 @@ def computeRates(voi, states, constants):
     return rates
 ```
 
-#### Compute Algebraic Variables
+#### 5.5. Compute Algebraic Variables
 The <code>computeAlgebraic</code> function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
 
 ```python
@@ -179,7 +179,7 @@ def computeAlgebraic(constants, states, voi):
     return algebraic
 ```
 
-#### Piecewise Function
+#### 5.6. Piecewise Function
 The <code>custom_piecewise</code> function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
 
 ```python
@@ -188,7 +188,7 @@ def custom_piecewise(cases):
     return select(cases[0::2],cases[1::2])
 ```
 
-#### Solve the Model
+#### 5.7. Solve the Model
 The solve_model function sets up and solves the differential equations using SciPy's ODE solver. It initializes the constants and states, sets up the solver, and then integrates the system over a specified time span, returning the variable of integration, states, and algebraic variables.
 
 ```python
@@ -222,7 +222,7 @@ def solve_model():
     return voi, states, algebraic
 ```
 
-#### Plot the Results
+#### 5.8. Plot the Results
 
 The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
 
@@ -238,7 +238,7 @@ def plot_model(voi, states, algebraic):
     pylab.show()
 ```
 
-#### Main Execution
+#### 5.9. Main Execution
 This part of the code is executed when the script is run directly. It calls the solve_model function to compute the results and then plots them using Matplotlib.
 
 ```python
@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
 In summary, this code defines a system of differential equations and provides functions to initialize the system, compute the derivatives, integrate the system over time, and plot the results. The code is organized into clear functions, each with a specific role in the modeling and simulation process.
 
-### Code Modifications
+### 6. Code Modifications
 <p>Unfortunately, the generated code does not work out of the box, requiring some critical adjustments. This situation often occurs when automatically produced code is utilized, and it highlights the necessity of human intervention in the coding process. In brief, the following actions will be undertaken to modify the existing code to make it functional and more user-friendly:</p>
 <ol>
   <li><strong>Refactoring for Readability</strong>: To enhance understanding and maintenance, the code will undergo refactoring. This process involves restructuring the existing code without changing its external behavior. It aims to improve the nonfunctional attributes of the software, making the code more readable.</li>
@@ -263,7 +263,7 @@ In summary, this code defines a system of differential equations and provides fu
 </ol>
 <p>These modifications will be vital to transform the raw generated code into a functional, efficient, and user-friendly script. The following sections will delve into each of these modifications, providing specific examples and guidance on implementing these changes. By following these steps, users will be able to leverage the provided code to suit their specific needs and preferences.</p>
 
-#### 1. Definition of Sinoatrial Node Class
+#### 6.1. Definition of Sinoatrial Node Class
 <p>This section of the code defines the <code>SinoAtrialNode</code> class, allowing for the creation of a SAN object, which represents a central component of the heart's electrical system. This class structure enables encapsulation and modularity within the code.</p>
 
 <p>
@@ -281,7 +281,7 @@ class SinoAtrialNode:
         self.update(ACh, Nor)
 ```
 
-#### 2. Refactoring for Better Readability
+#### 6.2. Refactoring for Better Readability
 <p>The variables <code>STATES</code>, <code>ALGEBRAIC</code>, <code>CONSTANTS</code> are refactored to <code>y</code>, <code>a</code>, <code>c</code>, respectively, to improve readability and succinctness within the code. This change simplifies variable names without losing the underlying meaning.</p>
 
 ```python
@@ -289,7 +289,7 @@ self.c = np.zeros(self.NUM_CONSTANTS)
 self.y = np.zeros(self.NUM_STATES)
 ```
 
-#### 3. Introduction of Update Function
+#### 6.3. Introduction of Update Function
 <p>An update function has been introduced that recalculates constants when ACh and Nor are adjusted. This function is called within the constructor, ensuring that the constants are properly initialized based on the given inputs.</p>
 
 ```python
@@ -303,7 +303,7 @@ def update(self, ACh, Nor):
     ...
 ```
 
-#### 4. Constructor for Initialization
+#### 6.4. Constructor for Initialization
 <p>The constructor method initializes all variables, including arrays for states and constants. This method sets up the initial state of the Sinoatrial Node object and ensures that it is ready for further operations.</p>
 
 ```python
@@ -316,7 +316,7 @@ def __init__(self, ACh=0, Nor=0):
     self.update(ACh, Nor)
 ```
 
-#### 5. Step Function for Calculating Rates
+#### 6.5. Step Function for Calculating Rates
 <p>The step function calculates the rates for each step as the model advances in time. This function represents the dynamics of the system and updates the states based on the provided inputs and current state.</p>
 
 ```python
@@ -333,7 +333,7 @@ def step(self, t, y):
     return dydt
 ```
 
-#### 6. Conversion of Piecewise Terms to Use NumPy
+#### 6.6. Conversion of Piecewise Terms to Use NumPy
 <p>The original code contained custom piecewise functions generated by the OpenOCR code generator. In this modification, those custom piecewise functions were replaced with NumPy's built-in <code>np.piecewise</code> function. This change leverages the efficiency and readability of NumPy's functions and ensures compatibility with other NumPy-based calculations within the code.</p>
 
 ```python
@@ -341,7 +341,7 @@ def step(self, t, y):
 result = np.piecewise(x, [condition1, condition2], [value_if_condition1, value_if_condition2])
 ```
 
-### Executing the Simulation with solve_ivp
+#### 6.7. Executing the Simulation with solve_ivp
 <p>The simulation of the Sinoatrial Node model is executed using SciPy's <code>solve_ivp</code> function, a general-purpose solver for initial value problems with a flexible interface for defining complex systems of ordinary differential equations (ODEs). </p>
 
 ```python
@@ -368,7 +368,7 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
   <li><code>vectorized=False</code>: Indicates whether the function is implemented in a vectorized fashion. Setting this to False means that the function expects the input to be a single point in time.</li>
 </ol>
 
-<h2>Plotting the Results</h2>
+#### 6.8. Plotting the Results
 <p>The following code is used to visualize the simulation results. It includes the definition of the legend labels for the different states and plots all 33 states, each in a separate subplot.</p>
 
 ```python
