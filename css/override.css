@@ -69,10 +69,14 @@ h1, h2, h3, h4{
   text-align: justify !important;
 }
 
-#welcome_container(min-width: 600px) {
-    flex-direction: row;
+@media(min-width: 600px){
+  #welcome_container {
+      flex-direction: row;
+  }
 }
 
-#professional_projects_container(min-width: 600px) {
-    flex-direction: row;
+@media(min-width: 600px){
+  #professional_projects_container(min-width: 600px) {
+      flex-direction: row;
+  }
 }
