@@ -5,11 +5,11 @@
   <div style="margin-right: 20px; font-size:10pt; text-align:center">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 100%; border-radius: 50%;">
     <p style="margin-bottom:0px"><strong>Max Haberbusch</strong></p>
-    <p><a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> | 
-      <a href="https://github.com/CellularSyntax" target="_blank">GitHub</a> | 
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/">LinkedIn</a> | 
       <a href="https://www.researchgate.net/profile/Max-Haberbusch">ResearchGate</a> | 
-      <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a></p>
+      <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a>
+      <a href="https://github.com/CellularSyntax" target="_blank">GitHub</a> | 
+      <a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> | 
   </div>
   <div>
     <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
