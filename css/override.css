@@ -70,21 +70,9 @@ h1, h2, h3, h4{
 }
 
 #welcome_container(min-width: 600px) {
-    div {
-      flex-direction: row;
-    }
-    img {
-      margin-right: 10px;
-      margin-bottom: 0;
-    }
+    flex-direction: row;
 }
 
 #professional_projects_container(min-width: 600px) {
-    div {
-      flex-direction: row;
-    }
-    img {
-      margin-right: 10px;
-      margin-bottom: 0;
-    }
+    flex-direction: row;
 }
