@@ -68,3 +68,23 @@ h1, h2, h3, h4{
 .page-content{
   text-align: justify !important;
 }
+
+#welcome_container(min-width: 600px) {
+    div {
+      flex-direction: row;
+    }
+    img {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+}
+
+#professional_project_container(min-width: 600px) {
+    div {
+      flex-direction: row;
+    }
+    img {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+}
