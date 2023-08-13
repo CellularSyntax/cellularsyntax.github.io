@@ -100,3 +100,7 @@ h1, h2, h3, h4{
     margin-right: 57px !important;
    }
 }
+
+ul, ol{
+  text-align: left !important;
+}
