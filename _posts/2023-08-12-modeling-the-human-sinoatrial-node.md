@@ -408,7 +408,7 @@ plt.show()
 
 <img id="fig3" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
 <div class="figcap"><strong>Figure 3</strong> Plot of the 33 states from the simulation. Membrane potential in millivolts (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </div>
-
+<br/>
 ### References
 <ol>
 <li><a href="https://doi.org/10.1113/JP273259" id="ref1">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
