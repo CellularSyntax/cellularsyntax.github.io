@@ -1,9 +1,10 @@
 <h1>Welcome to Cellular Syntax! ✨</h1>
 
+<p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
+
 <div style="display: flex; align-items: flex-start;">
   <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 100px; border-radius: 50%; margin-right: 20px;">
   <div>
-    <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
     <p>With an undergraduate degree in computer science 💻 and a Ph.D. in biomedical engineering 🧪, my passion lies in computational modeling in medicine and biology. From the precise control of neurons 🧠 to the rhythmic beating of the heart ❤️, I find excitement in unraveling the complex mechanisms that make us tick.</p>
   </div>
 </div>
