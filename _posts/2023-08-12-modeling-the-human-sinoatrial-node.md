@@ -1,7 +1,6 @@
 ## Modeling the Human Sinoatrial Node
 
 ### Introduction
-
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
 In 2017, a groundbreaking study by Alan Fabbri and colleagues [<a href="#ref1"><strong>1</strong></a>] brought us closer to this understanding by constructing a comprehensive mathematical model of the human SAN pacemaker cell. Published in <i>The Journal of Physiology</i>, this work doesn't merely echo the rhythm of life; it deciphers its code.
@@ -35,22 +34,20 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <p>Overall, the model by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] integrates detailed revisions to accurately represent human SAN cells, reflecting experimental data, and making specific modifications to currents, capacitance, Ca<sup>2+</sup> handling, and ion concentrations.</p>
 
 #### Autonomic Modulation of the Sinoatrial Node
-
 <p>The autonomic modulation of the SA node is a critical aspect of cardiac function, allowing the heart rate to be precisely regulated in response to various physiological demands. The autonomic nervous system (ANS) influences the SA node through both its sympathetic and parasympathetic branches. Sympathetic stimulation increases the heart rate by enhancing the pacemaker currents within the SA node, preparing the body for stress or physical activity. In contrast, parasympathetic stimulation, mediated mainly through acetylcholine, reduces the heart rate by inhibiting these currents, promoting a state of rest and recovery. The balance between these two branches ensures that the heart rate is finely tuned to meet the body's needs, whether it is responding to exercise, stress, or relaxation. The modulation of the SA node by the ANS is a complex interaction involving neurotransmitters, receptors, ionic channels, and cellular signaling pathways. It is a fundamental aspect of cardiovascular regulation, with implications for overall heart health and disease management.
 </p>
 
 <p>The effects of 10 nM ACh on <em>I<sub>f</sub></em> activation (–7.5 mV shift in voltage dependence of activation), <em>I<sub>CaL</sub></em> (3.1% reduction of maximal conductance) and SR Ca<sup>2+</sup> uptake (7% decrease of maximum activity) were all adopted from the parent model [<a href="#ref2"><strong>2</strong></a>]. The administration of ACh also activates <em>I<sub>K,ACh</sub></em>, which is zero in the default model. The <em>I<sub>K,ACh</sub></em> formulation was derived from the parent model. The maximal conductance <em>g<sub>K,ACh</sub></em> was set to 3.45 nS (reduced by 77.5%) to achieve an overall reduction of the spontaneous rate by 20.8% upon administration of 10 nM ACh, as observed by Bucchi et al.  [<a href="#ref3"><strong>3</strong></a>] in rabbit SAN cells. The targets of isoprenaline (Iso), an antagonist of the sympathetic neurotransmitter Noradrenaline, are <em>I<sub>f</sub></em>, <em>I<sub>CaL</sub></em>, <em>I<sub>NaK</sub></em>, maximal Ca<sup>2+</sup> uptake and <em>I<sub>Ks</sub></em>. Changes in currents were adopted from the parent model, except for the modulation of <em>I<sub>CaL</sub></em>, where the effect of Iso induced a slightly smaller decrease of the slope factor <em>k<sub>dL</sub></em> (−27% with respect to control conditions, instead of the −31% assumed by the parent model). The <em>I<sub>CaL</sub></em> current was modulated to fit the experimental data reported by Bucchi et al. [<a href="#ref3"><strong>3</strong></a>] on rabbit SAN cells (26.3±5.4%; mean±SEM, n=7) for the same Iso concentration [<a href="#ref1"><strong>1</strong></a>].</p>
 
 #### Simulation of Action Potential Waveform
-
 <p>The simulated action potential (AP) waveform has been shown to be in good alignment with the available experimental data, as depicted in <strong><a href="#fig2">Figure 2</a></strong>. The majority of the quantitative factors that detail the morphology of the AP, including cycle length (CL), MDP (maximum diastolic potential), APD<sub>90</sub> (action potential duration at 90% repolarization), and DDR<sub>100</sub> (100% diastolic depolarization rate), fall within the mean ± SD (standard deviation) range of the experimentally observed values [<a href="#ref4"><strong>4</strong></a>]. Specifically, the model's AP is defined by a CL of 814 ms, corresponding to a beating frequency of 74 beats per minute. Notably, the model displays a higher (dV/dt)<sub>max</sub> and overshoot (OS), and a more prolonged APD<sub>20</sub>, which are predicted characteristics outside the experimental mean ± SD range.</p>
 
 <img id="fig2" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_membrane_potential.jpg" style="display:block;margin-left:auto;margin-right:auto;max-width:85%"/>
 <div class="figcap"><strong>Figure 2</strong> (<strong>A</strong>) The simulated action potential of a single human SAN (sinoatrial node) cell is shown as a black thick line, contrasted with the experimentally recorded action potentials from three individual isolated human SAN cells, represented by the grey traces. The experimental data were sourced from Verkerk et al. [<a href="#ref4">4</a>] and Verkerk and Wilders [<a href="#ref5"><strong>5</strong></a>]. (<strong>B</strong>) A comparison between the simulated (black thick line) and experimentally recorded (grey line) Ca<sup>2+</sup> transient is depicted. Experimental data for this was obtained from Verkerk et al. [<a href="#ref6">6</a>]. Reproduced from Fabbri et al. [<a href="#ref1"><strong>1</strong></a>, p.2373]
 </div>
 <br/>
-### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 
+### Prerequisites for Implementing the Human SAN Pacemaker Cell Model
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
 <ol>
   <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.<br/></li>
@@ -92,7 +89,6 @@ $ ./OpenCOR -c CellMLTools::export HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.c
  <p>This section offers an in-depth examination of the Python code generated to simulate the Sinoatrial Node (SAN). The code is structured into various functions, each tailored to handle distinct aspects of the SAN model. Below, each function is presented with a description of its purpose.</p>
 
 #### Size Definitions and Imports
-
 This part of the code defines the sizes of various arrays that will be used throughout the code. It also imports all the functions from the math and NumPy modules.
 
 ```python
@@ -105,9 +101,7 @@ sizeConstants = 116
 ```
 
 #### Create Legends and Labels
-
 The <code>createLegends</code> function initializes and sets legends or descriptions for states, algebraic variables, variable of integration (voi) or time, and constants. This can be useful for annotating plots or for providing context to the values within the code.
-
 
 ```python
 def createLegends():
@@ -128,7 +122,6 @@ def createLegends():
 ```
 
 #### Initialize Constants and States
-
 The <code>initConsts</code> function initializes the constants and states arrays. The constants are values that do not change during the simulation, whereas the states represent the initial state of the system and can be altered as the system evolves.
 
 ```python
@@ -148,7 +141,6 @@ def initConsts():
 ```
 
 #### Compute Rates
-
 The <code>computeRates</code> function computes the rate of change of the states based on the current values of states, constants, and variable of integration (voi). This function is essential for the numerical integration step where the system evolves over time.
 
 ```python
@@ -169,9 +161,7 @@ def computeRates(voi, states, constants):
 ```
 
 #### Compute Algebraic Variables
-
 The <code>computeAlgebraic</code> function computes algebraic variables, which are derived from the state variables but are not part of the differential equations themselves. These can represent various quantities of interest in the model.
-
 
 ```python
 def computeAlgebraic(constants, states, voi):
@@ -190,7 +180,6 @@ def computeAlgebraic(constants, states, voi):
 ```
 
 #### Piecewise Function
-
 The <code>custom_piecewise</code> function computes the result of a piecewise-defined function. It takes as input a list of conditions and values and returns the value corresponding to the first true condition.
 
 ```python
@@ -198,8 +187,8 @@ def custom_piecewise(cases):
     """Compute result of a piecewise function"""
     return select(cases[0::2],cases[1::2])
 ```
-#### Solve the Model
 
+#### Solve the Model
 The solve_model function sets up and solves the differential equations using SciPy's ODE solver. It initializes the constants and states, sets up the solver, and then integrates the system over a specified time span, returning the variable of integration, states, and algebraic variables.
 
 ```python
@@ -250,7 +239,6 @@ def plot_model(voi, states, algebraic):
 ```
 
 #### Main Execution
-
 This part of the code is executed when the script is run directly. It calls the solve_model function to compute the results and then plots them using Matplotlib.
 
 ```python
@@ -266,7 +254,6 @@ if __name__ == "__main__":
 In summary, this code defines a system of differential equations and provides functions to initialize the system, compute the derivatives, integrate the system over time, and plot the results. The code is organized into clear functions, each with a specific role in the modeling and simulation process.
 
 ### Necessary Code Modifications for Successful Execution
-
 <p>Unfortunately, the generated code does not work out of the box, requiring some critical adjustments. This situation often occurs when automatically produced code is utilized, and it highlights the necessity of human intervention in the coding process. In brief, the following actions will be undertaken to modify the existing code to make it functional and more user-friendly:</p>
 <ol>
   <li><strong>Refactoring for Readability</strong>: To enhance understanding and maintenance, the code will undergo refactoring. This process involves restructuring the existing code without changing its external behavior. It aims to improve the nonfunctional attributes of the software, making the code more readable.</li>
@@ -370,7 +357,6 @@ sol = solve_ivp(san.step, [0, tmax], list(san.y), method='BDF', rtol=1e-6,
 
 <p>This call to <code>solve_ivp</code> integrates the model over the specified time interval, utilizing the BDF method and the provided initial conditions, tolerances, and evaluation points to generate the simulation results.</p>
   
-  
   <p>Here's a breakdown of the parameters used in the function:</p>
 <ol>
   <li><code>san.step</code>: This is the step function defined in the SinoAtrialNode class, responsible for calculating the rates at which the model advances in time.</li>
@@ -410,6 +396,7 @@ plt.show()
 <img id="fig3" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
 <div class="figcap"><strong>Figure 3</strong> Plot of the 33 states from the simulation. Membrane potential in millivolts (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </div>
 <br/>
+
 ### References
 <ol>
 <li><a href="https://doi.org/10.1113/JP273259" id="ref1">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
