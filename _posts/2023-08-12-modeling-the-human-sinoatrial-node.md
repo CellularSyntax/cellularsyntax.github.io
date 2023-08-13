@@ -202,7 +202,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 </div>
 <br/>
 
-### 3. Prerequisites for Implementing the Human SAN Pacemaker Cell Model
+### 3. Prerequisites for Implementing the Human SAN Model
 <p>Before we dive into the heart of the modeling, there are some essential tools and resources you'll need to have ready:</p>
 <ol>
   <li><strong>Python</strong>: The beating core of our code, Python is the programming language we'll use to bring this model to life. If you don't already have it installed, you can download it from the <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">official Python website</a>.<br/></li>
