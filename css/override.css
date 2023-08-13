@@ -95,6 +95,7 @@ h1, h2, h3, h4{
       flex-direction: row !important;
   }
   #about_blog_container img{
-     width: 26% !important;
+     width: 22% !important;
+     margin-right: 33px !important;
    }
 }
