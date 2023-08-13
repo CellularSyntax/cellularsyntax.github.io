@@ -20,10 +20,11 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 <br/>
 
 #### 2.1. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model
+<p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
 
 <p>The Hodgkin-Huxley model elegantly describes the membrane potential of a neuron by considering the flow of sodium (Na+), potassium (K+), and leak currents. The total current flowing through the membrane is given by the equation:</p>
 
-\frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}}))
+\[ \frac{dV}{dt} = \frac{1}{C_m} \cdot (I_{\text{ext}} - (I_{\text{Na}} + I_{\text{K}} + I_{\text{L}})) \]
 
 <p>where</p>
 
@@ -38,8 +39,7 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 
 <p>While the modeling of the human sinoatrial node cell is multifaceted, the core concept of how an ion channel is modeled can be elucidated through the example of the sodium (Na+) channel in the Hodgkin-Huxley model. In this well-known model, the Na+ channel's behavior is governed by specific gating variables, and the flow of Na+ ions across the membrane is given by the equation:</p>
 
-I_{\text{Na}} = g_{\text{Na}} \cdot m^3 \cdot h \cdot (V - E_{\text{Na}})
-
+\[ I_{\text{Na}} = g_{\text{Na}} \cdot m^3 \cdot h \cdot (V - E_{\text{Na}}) \]
 
 <p>where</p>
 
@@ -54,8 +54,8 @@ I_{\text{Na}} = g_{\text{Na}} \cdot m^3 \cdot h \cdot (V - E_{\text{Na}})
 
 <p>The time evolution of the gating variables 'm' and 'h' is described by:</p>
 
-\frac{dm}{dt} = \alpha_m(V) \cdot (1-m) - \beta_m(V) \cdot m
-\frac{dh}{dt} = \alpha_h(V) \cdot (1-h) - \beta_h(V) \cdot h
+\[ \frac{dm}{dt} = \alpha_m(V) \cdot (1-m) - \beta_m(V) \cdot m \]
+\[ \frac{dh}{dt} = \alpha_h(V) \cdot (1-h) - \beta_h(V) \cdot h \]
 
 <p>The table below (<a href="#tab1"><strong>Table 1</strong></a>) summarizes these parameters with their common values.</p>
 <table border="1" cellpadding="5" id="tab1">
