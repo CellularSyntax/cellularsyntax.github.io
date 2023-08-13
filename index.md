@@ -4,7 +4,7 @@
 <div style="display: flex; align-items: flex-start;">
   <div style="margin-right: 20px; font-size:8pt; text-align:center">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 85%; border-radius: 50%;">
-    <p style="margin-bottom:0px; font-size:12pt"><strong>Max Haberbusch</strong></p>
+    <p style="margin-bottom:0px; font-size:11pt"><strong>Max Haberbusch</strong></p>
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a> | 
       <a href="https://www.researchgate.net/profile/Max-Haberbusch" target="_blank">ResearchGate</a> | 
       <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a>
