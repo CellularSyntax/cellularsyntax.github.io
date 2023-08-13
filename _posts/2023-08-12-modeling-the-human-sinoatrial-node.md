@@ -1,3 +1,7 @@
+---
+category: "Computational Modelling"
+---
+
 ## Modeling the Human Sinoatrial Node
 
 ### Table of Contents
