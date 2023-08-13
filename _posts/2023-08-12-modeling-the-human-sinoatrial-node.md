@@ -7,7 +7,7 @@
 4. [Python Code Generation from CellML File](#4-python-code-generation-from-cellml-file)
 5. [Understanding the Structure of the Generated Python Code](#5-understanding-the-structure-of-the-generated-python-code)
 6. [Code Modifications](#6-code-modifications)
-[References](#references)
+7. [References](#references)
 
 ### 1. Introduction
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
