@@ -73,9 +73,12 @@ h1, h2, h3, h4{
   #welcome_container {
       flex-direction: row !important;
   }
-   #welcome_container div{
-     margin-right: 30px !important;
-   }
+  #welcome_container div{
+    margin-right: 30px !important;
+  }
+  #welcome_container #welcome_text{
+    margin-right: 0px !important;
+  }
 }
 
 @media(min-width: 600px){
