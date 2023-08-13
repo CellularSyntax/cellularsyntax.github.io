@@ -1,5 +1,16 @@
 ## Modeling the Human Sinoatrial Node
 
+- [1. Introduction](#1-introduction)
+- [2. Model Foundation](#2-model-foundation)
+  - [2.1. Membrane Potential Dynamics in the Human SAN Model](#21-membrane-potential-dynamics-in-the-human-san-model)
+  - [2.2. Understanding Ion Channel Dynamics: A Look at the Hodgkin-Huxley Model](#22-understanding-ion-channel-dynamics-a-look-at-the-hodgkin-huxley-model)
+  - [2.3. Cell Capacitance and Dimensions](#23-cell-capacitance-and-dimensions)
+  - [2.4. Membrane Currents](#24-membrane-currents)
+  - [2.5. Calcium Handling](#25-calcium-handling)
+  - [2.6. Ion Concentrations](#26-ion-concentrations)
+  - [2.7. Autonomic Modulation of the Sinoatrial Node](#27-autonomic-modulation-of-the-sinoatrial-node)
+
+
 ### 1. Introduction
 The heart's rhythm, that steadfast beat echoing life's very essence, begins in a specialized region known as the sinoatrial node (SAN). Understanding the SAN isn't just a matter of anatomy; it's about unraveling the electrical dance that initiates each heartbeat.
 
@@ -377,7 +388,6 @@ def solve_model():
 ```
 
 #### 5.8. Plot the Results
-
 The plot_model function plots the state and algebraic variables against the variable of integration. It can be used to visualize the evolution of the system over time.
 
 ```python
