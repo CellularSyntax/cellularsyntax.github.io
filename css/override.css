@@ -63,3 +63,7 @@ hr {
 article a{
   font-weight:bold;
 }
+
+h3#table-of-contents + ol {
+  font-weight: normal !important;
+}
