@@ -26,8 +26,7 @@
 
 <p>Feel free to explore and learn. If you're interested in collaborations or simply want to chat about modeling stuff, I'd be thrilled to hear from you! Reach out to me via email 📧 at <a href="mailto:max.haberbusch@meduniwien.ac.at">max.haberbusch@meduniwien.ac.at</a> or connect with me on <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a>.</p>
 
+<p>And, before you dive into the blog, a quick shoutout to the creator of the cute neuron logo that adds a touch of charm to Cellular Syntax: Neuron icons created by <a href="https://www.flaticon.com/free-icons/neuron" title="neuron icons" target="_blank">Neuron icons created by Freepik - Flaticon</a>.</p>
+
 <p>Happy exploring 🚀, and welcome to the world of Cellular Syntax!</p>
-
-<p style="font-size:10pt">And, before you dive into the blog, a quick shoutout to the creator of the cute neuron logo that adds a touch of charm to Cellular Syntax: Neuron icons created by <a href="https://www.flaticon.com/free-icons/neuron" title="neuron icons" target="_blank">Neuron icons created by Freepik - Flaticon</a>.</p>
-
 
