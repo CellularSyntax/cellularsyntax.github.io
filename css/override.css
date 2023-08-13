@@ -60,7 +60,7 @@ hr {
   font-size: 10pt;
 }
 
-h1 h2 h3 h4{
+h1, h2, h3, h4{
   padding-bottom: 0.3em;
   border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
 }
