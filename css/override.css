@@ -87,3 +87,12 @@ h1, h2, h3, h4{
      width: 26% !important;
    }
 }
+
+@media(min-width: 600px){
+  #about_blog_container{
+      flex-direction: row !important;
+  }
+  #about_blog_container img{
+     width: 26% !important;
+   }
+}
