@@ -1,7 +1,6 @@
-<h1>Welcome to Cellular Syntax! ✨</h1>
+![image](https://github.com/CellularSyntax/cellularsyntax.github.io/assets/67686316/127da51b-37f5-40a4-9d5c-b88b2135e5aa)<h1>Welcome to Cellular Syntax! ✨</h1>
 
-
-<div style="display: flex; align-items: flex-start;">
+<div class="welcome_container" style="display: flex; align-items: flex-start; flex-direction:column">
   <div style="margin-right: 10px; font-size:8pt; text-align:center">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 85%; border-radius: 50%; margin-top:7px">
     <p style="margin-bottom:0px; font-size:11pt"><strong>Max Haberbusch</strong></p>
@@ -19,7 +18,7 @@
 </div>
 
 ## Professional Projects
-<div style="display: flex; align-items: center;">
+<div class="professional_projects_container" style="display: flex; align-items: center; flex-direction:column">
 <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/neuheart_logo.png" alt="NeuHeart Project Logo" style="width:26%; margin-right:10px">
 <p>One of my proudest achievements is my work on the European Horizon 2020 project <a href="https://cordis.europa.eu/project/id/824071" target="_blank">NeuHeart - A neuroprosthesis to Restore the Vagal-Cardiac Closed-Loop Connection after Heart Transplantation</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
 </div>
