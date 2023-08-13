@@ -9,7 +9,7 @@
       <a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> |
       <a href="https://orcid.org/0000-0003-0712-4893" target="_blank">ORCiD</a>
   </div>
-  <div>
+  <div id="welcome_text">
     <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
     <p>With an undergraduate degree in computer science 💻 and a Ph.D. in biomedical engineering 🧪, my passion lies in computational modeling in medicine and biology. From the precise control of neurons 🧠 to the rhythmic beating of the heart ❤️, I find excitement in unraveling the complex mechanisms that make us tick.</p>
   </div>
