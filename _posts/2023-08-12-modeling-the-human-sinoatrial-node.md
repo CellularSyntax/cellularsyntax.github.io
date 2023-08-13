@@ -546,10 +546,12 @@ for i in range(1, 33):
 plt.show()
 ```
 
-<p>The code produces a figure with 33 subplots, representing different states of the model (<strong><a href="#fig3">Figure 3</a></strong>). </p>
+<p>The code produces a figure with 9 subplots, representing selected essential states of the model, including membrane voltage (V), submembrane calcium concentration (Ca<sub>sub</sub>), and various gating variables for different ionic currents (<strong><a href="#fig3">Figure 3</a></strong>). </p>
 
-<img id="fig3" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_plot.png">
-<div class="figcap"><strong>Figure 3</strong> Plot of the 33 states from the simulation. Membrane potential in millivolts (mV), concentrations in millimolar (mM), and various gates and components represented in dimensionless units (D.L.). Each subplot visualizes the evolution of a specific state over time. </div>
+<p>The figure has been simplified to include only 9 subplots to focus on the most essential and representative states of the model (<strong><a href="#fig3">Figure 3</a></strong>). These selected states include key variables such as membrane voltage (V), submembrane calcium concentration (Ca<sub>sub</sub>), and gating variables for different ionic currents that play a vital role in understanding the cell's electrophysiology. By concentrating on these states, the plot provides a clearer and more concise visualization, avoiding the complexity that would arise from including all 33 states.</p>
+
+<img id="fig3" src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/san_model_example_results.png">
+<div class="figcap"><strong>Figure 3</strong> Essential States of the SAN Cell Model. This figure illustrates the time evolution of key states in the SAN cell model, including the membrane voltage \( V \), submembrane calcium concentration \( \text{Ca}_{\text{sub}} \), and gating variables for different ionic currents such as sodium \( (m, h) \), L-type calcium \( (d_{L}, f_{L}) \), and calcium dynamics in junctional and network sarcoplasmic reticulum \( (\text{Ca}_{\text{jsr}}, \text{Ca}_{\text{nsr}}) \) and intracellular calcium \( \text{Ca}_{i} \). The selected states provide an insightful overview of the system's dynamics without the complexity of all 33 states.</div>
 <br/>
 
 ### References
