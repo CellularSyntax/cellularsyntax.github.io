@@ -59,15 +59,3 @@ hr {
   text-align: center;
   font-size: 10pt;
 }
-
-article a{
-  font-weight:bold;
-}
-
-h3#table-of-contents + ol li {
-  font-weight: normal !important;
-}
-
-h3#references + ol li{
-  font-weight: normal !important;
-}
