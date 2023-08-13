@@ -1,7 +1,7 @@
 <h1>Welcome to Cellular Syntax! ✨</h1>
 
 <div style="display: flex; align-items: center;">
-  <img src="profile-picture.jpg" alt="Profile Picture of Max Haberbusch" style="width: 100px; border-radius: 50%; margin-right: 20px;">
+  <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 100px; border-radius: 50%; margin-right: 20px;">
   <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
 </div>
 
