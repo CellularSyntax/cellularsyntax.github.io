@@ -1,8 +1,11 @@
 <h1>Welcome to Cellular Syntax! ✨</h1>
 
-<p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
+<div style="display: flex; align-items: center;">
+  <img src="profile-picture.jpg" alt="Profile Picture of Max Haberbusch" style="width: 100px; border-radius: 50%; margin-right: 20px;">
+  <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
+</div>
 
-<p>With an undergraduate degree in computer science 💻 and a Ph.D. in biomedical engineering 🧪, my passion lies in computational modeling in medicine and biology. From the precise control of neurons 🧠 to the rhythmic beating of the heart ❤️, I find excitement in unraveling the complex mechanisms that make us tick. </p>
+<p>With an undergraduate degree in computer science 💻 and a Ph.D. in biomedical engineering 🧪, my passion lies in computational modeling in medicine and biology. From the precise control of neurons 🧠 to the rhythmic beating of the heart ❤️, I find excitement in unraveling the complex mechanisms that make us tick.</p>
 
 <p>One of my proudest achievements is my work on the <a href="http://www.neuhearth2020.eu/" target="_blank">NeuHeart project</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
 
