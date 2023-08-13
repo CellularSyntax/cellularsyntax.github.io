@@ -9,7 +9,7 @@
       <a href="https://www.researchgate.net/profile/Max-Haberbusch">ResearchGate</a> | 
       <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a>
       <a href="https://github.com/CellularSyntax" target="_blank">GitHub</a> | 
-      <a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> | 
+      <a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a>
   </div>
   <div>
     <p>Cellular Syntax isn't just a name; it's a philosophy. Here, we explore the intriguing fusion of computer science and biomedical engineering, where cellular structures meet programming syntax. I want to invite you to join me on a journey through the binary blueprint of life 🧬.</p>
