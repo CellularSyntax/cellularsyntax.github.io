@@ -73,10 +73,17 @@ h1, h2, h3, h4{
   #welcome_container {
       flex-direction: row !important;
   }
+   #welcome_container div{
+     margin-right: 0px !important;
+     margin-bottom: 15px !important;
+   }
 }
 
 @media(min-width: 600px){
   #professional_projects_container{
       flex-direction: row !important;
   }
+  #professional_projects_container img{
+     width: 65% !important;
+   }
 }
