@@ -22,7 +22,7 @@ Basing their model on electrophysiological data from isolated human SAN pacemake
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
-You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a>.
+You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank"><strong>here</strong></a>.
 
 ### 2. Model Foundation
 <p>The starting point of the work by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] was the rabbit SAN cell model from Severi et al. [<a href="#ref2"><strong>2</strong></a>], developed as a Hodgkin-Huxley-type model. This model utilizes differential equations to describe how ionic current flow through the cell membrane gives rise to the electrical activity in the cell, providing a foundational approach to understanding membrane potential dynamics. The Fabbri et al. model [<a href="#ref1"><strong>1</strong></a>] integrated enhancements derived from electrophysiological data of human cells, along with automatic optimization for unknown parameters. Influenced by various human cell data, it was constrained by AP parameters, voltage clamp data, effects of <i>I<sub>f</sub></i> blockers, and Ca<sup>2+</sup> transient data. <strong><a href="#fig1">Figure 1</a></strong> shows a schematic diagram of the human SAN AP model, emphasizing the compartmentalization essential for calcium handling and detailing the ionic currents, pumps, and exchangers inherited from the parent model or developed independently.</p>
@@ -566,7 +566,7 @@ plt.show()
 <br/>
 
 ### 7. Conclusions
-<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a>.</p>
+<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank"><strong>here</strong></a>.</p>
 <p>Here's a summary of the main lessons:</p>
 <ul>
   <li><strong>Understanding the Fundamental Principles of the SAN Model</strong>: We have laid out the core concepts and mechanisms behind the SAN model, diving into its intricacies and how it represents the beating of the heart.</li>
@@ -584,10 +584,10 @@ plt.show()
 
 ### References
 <ol>
-<li><a href="https://doi.org/10.1113/JP273259" id="ref1">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
-<li><a href="https://doi.org/10.1113/jphysiol.2012.229435" id="ref2">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
-  <li><a href="https://doi.org/10.1016/j.yjmcc.2007.04.017" id="ref3">Bucchi, Annalisa, et al. "Modulation of rate by autonomic agonists in SAN cells involves changes in diastolic depolarization and the pacemaker current." Journal of molecular and cellular cardiology 43.1 (2007): 39-48.</a></li>
-    <li><a href="https://doi.org/10.1093/eurheartj/ehm339" id="ref4">Verkerk, Arie O., et al. "Pacemaker current (I f) in the human sinoatrial node." European heart journal 28.20 (2007): 2472-2478.</a></li>
-    <li><a href="https://doi.org/10.1016/j.yjmcc.2009.09.020" id="ref5">Verkerk, Arie O., and Ronald Wilders. "Relative importance of funny current in human versus rabbit sinoatrial node." Journal of Molecular and Cellular Cardiology 48.4 (2010): 799-801.</a></li>
-    <li><a href="https://doi.org/10.1155/2013/507872" id="ref6">Verkerk, Arie O., Marcel MGJ van Borren, and Ronald Wilders. "Calcium transient and sodium-calcium exchange current in human versus rabbit sinoatrial node pacemaker cells." The Scientific World Journal 2013 (2013).</a></li>
+<li><a href="https://doi.org/10.1113/JP273259" id="ref1" target="_blank">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
+<li><a href="https://doi.org/10.1113/jphysiol.2012.229435" id="ref2" target="_blank">Severi, Stefano, et al. "An updated computational model of rabbit sinoatrial action potential to investigate the mechanisms of heart rate modulation." The Journal of physiology 590.18 (2012): 4483-4499.</a></li>
+  <li><a href="https://doi.org/10.1016/j.yjmcc.2007.04.017" id="ref3" target="_blank">Bucchi, Annalisa, et al. "Modulation of rate by autonomic agonists in SAN cells involves changes in diastolic depolarization and the pacemaker current." Journal of molecular and cellular cardiology 43.1 (2007): 39-48.</a></li>
+    <li><a href="https://doi.org/10.1093/eurheartj/ehm339" id="ref4" target="_blank">Verkerk, Arie O., et al. "Pacemaker current (I f) in the human sinoatrial node." European heart journal 28.20 (2007): 2472-2478.</a></li>
+    <li><a href="https://doi.org/10.1016/j.yjmcc.2009.09.020" id="ref5" target="_blank">Verkerk, Arie O., and Ronald Wilders. "Relative importance of funny current in human versus rabbit sinoatrial node." Journal of Molecular and Cellular Cardiology 48.4 (2010): 799-801.</a></li>
+    <li><a href="https://doi.org/10.1155/2013/507872" id="ref6" target="_blank">Verkerk, Arie O., Marcel MGJ van Borren, and Ronald Wilders. "Calcium transient and sodium-calcium exchange current in human versus rabbit sinoatrial node pacemaker cells." The Scientific World Journal 2013 (2013).</a></li>
 </ol>
