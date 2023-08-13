@@ -189,7 +189,7 @@ You can download all the code from this article from my GitHub repository <a hre
 <p>Cell dimensions and membrane capacitance were assumed in line with experimental data, adopting dimensions of intracellular compartments from the parent model [<a href="#ref2"><strong>2</strong></a>].</p>
 
 #### 2.4. Membrane Currents
-<p>Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] specified sarcolemmal currents flowing through ionic channels, pumps, and exchangers shown in <strong><a href="#fig1">Figure 1</a></strong>, except for <i>$I_{K,ACh}$</i>. Adjustments were made for various currents such as the funny current (<i>$I_{f}$</i>), rapid delayed rectifier K$^{+}$ current (<i>$I_{Kr}$</i>), slow delayed rectifier K$^{+}$ current (<i>$I_{Ks}$</i>), ultrarapid delayed rectifier K$^{+}$ current (<i>$I_{Kur}$</i>), and others. These modifications included changes in conductance, implementation of kinetic schemes, and adjustments based on experimental findings or automatic optimization.</p>
+<p>Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] specified sarcolemmal currents flowing through ionic channels, pumps, and exchangers shown in <strong><a href="#fig1">Figure 1</a></strong>, except for <i>\(I_{K,ACh}\)</i>. Adjustments were made for various currents such as the funny current (<i>\(I_f\)</i>), rapid delayed rectifier K\(^{+}\) current (<i>\(I_{Kr}\)</i>), slow delayed rectifier K\(^{+}\) current (<i>\(I_{Ks}\)</i>), ultrarapid delayed rectifier K\(^{+}\) current (<i>\(I_{Kur}\)</i>), and others. These modifications included changes in conductance, implementation of kinetic schemes, and adjustments based on experimental findings or automatic optimization.</p>
 
 #### 2.5. Calcium Handling
 <p>The mathematical formulation of Ca<sup>2+</sup> handling was maintained from the parent model [<a href="#ref2"><strong>2</strong></a>], but parameters were updated through automatic optimization, including aspects such as SR Ca<sup>2+</sup> uptake (<i>J<sub>up</sub></i>), SR Ca<sup>2+</sup> release (<i>J<sub>rel</sub></i>), and Ca<sup>2+</sup> diffusion and buffers.</p>
@@ -240,7 +240,7 @@ $ pip install numpy scipy matplotlib
 <ol>
   <li>Open your command line or shell interface.</li>
   <li>Navigate to the directory where OpenCOR and the CellML file are located.</li>
-  <li><b>Open your shell and execute the following command to generate a Python file from the specified CellML model:</b>
+  <li>Open your shell and execute the following command to generate a Python file from the specified CellML model:
   </li>
 </ol>
 
