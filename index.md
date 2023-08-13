@@ -1,5 +1,3 @@
-![image](https://github.com/CellularSyntax/cellularsyntax.github.io/assets/67686316/127da51b-37f5-40a4-9d5c-b88b2135e5aa)<h1>Welcome to Cellular Syntax! ✨</h1>
-
 <div id="welcome_container" style="display: flex; align-items: flex-start; flex-direction:column">
   <div style="margin-right: 10px; font-size:8pt; text-align:center">
     <img src="https://raw.githubusercontent.com/CellularSyntax/cellularsyntax.github.io/main/profile_pic.jfif" alt="Profile Picture of Max Haberbusch" style="width: 85%; border-radius: 50%; margin-top:7px">
