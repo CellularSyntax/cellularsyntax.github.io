@@ -562,6 +562,22 @@ plt.show()
 </div>
 <br/>
 
+### 7. Conclusions
+<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. Here's a summary of the main lessons:</p>
+<ul>
+  <li><strong>Understanding the Fundamental Principles of the SAN Model</strong>: We have laid out the core concepts and mechanisms behind the SAN model, diving into its intricacies and how it represents the beating of the heart.</li>
+  <li><strong>Modeling Ion Channels in the Hodgkin-Huxley Type Model</strong>: By examining the Hodgkin-Huxley model, we've learned how ion channels are effectively portrayed in the cell membrane, shedding light on the cell's electrophysiology.</li>
+  <li><strong>Exporting a CellML Model to Python Code</strong>: We have uncovered how a CellML model can be converted into Python, paving the way for efficient simulations and analysis.</li>
+  <li><strong>Modifying the Code for Execution</strong>: Through hands-on examples, we've learned how to adjust and tweak the code to make it run smoothly.</li>
+  <li><strong>Encapsulation through Object Orientation</strong>: By adopting object-oriented principles, we've streamlined the model into an encapsulated form, enhancing its modularity and reusability.</li>
+  <li><strong>Solving the Model with Scipy's solve_ivp Solver</strong>: We've used Scipy's powerful <code>solve_ivp</code> solver to crunch the equations, gaining insights into the numerical techniques for solving differential equations.</li>
+  <li><strong>Visualizing the Results</strong>: Finally, we've ventured into the art of data visualization, learning how to present the results of the model in a way that is both informative and visually appealing.</li>
+</ul>
+
+### 8. Outlook
+<p>Alright, folks, buckle up! Now that we've got our shiny Python implementation of the SAN model, things are about to get wild! 🚀 Next stop: Exploring the thrilling world of noradrenaline and acetylcholine. How do these sassy molecules shape the depolarization rate of the sinoatrial node? Hold onto your lab coats, because we're diving into that mystery in the next blog post. Get ready for a heart-pounding adventure that's bound to get your pulse racing! 🧪💓</p>
+<p>Stay tuned, science fans, and keep those neurons firing! 🧠💥</p>
+
 ### References
 <ol>
 <li><a href="https://doi.org/10.1113/JP273259" id="ref1">Fabbri, Alan, et al. "Computational analysis of the human sinus node action potential: model development and effects of mutations." The Journal of physiology 595.7 (2017): 2365-2396.</a></li>
