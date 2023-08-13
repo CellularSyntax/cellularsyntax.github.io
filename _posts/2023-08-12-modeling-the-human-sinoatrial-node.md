@@ -22,7 +22,7 @@ Basing their model on electrophysiological data from isolated human SAN pacemake
 
 Today, I invite you to delve into the heart of this paper with me. Let's explore the intricacies of the human SAN pacemaker cell, understand its rhythm, and appreciate the beauty of mathematical modeling in the realm of biology.
 
-You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank"><strong>here</strong></a>.
+You can download the complete code of the SAN model from this article from our <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank">GitHub repository</a>.
 
 ### 2. Model Foundation
 <p>The starting point of the work by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>] was the rabbit SAN cell model from Severi et al. [<a href="#ref2"><strong>2</strong></a>], developed as a Hodgkin-Huxley-type model. This model utilizes differential equations to describe how ionic current flow through the cell membrane gives rise to the electrical activity in the cell, providing a foundational approach to understanding membrane potential dynamics. The Fabbri et al. model [<a href="#ref1"><strong>1</strong></a>] integrated enhancements derived from electrophysiological data of human cells, along with automatic optimization for unknown parameters. Influenced by various human cell data, it was constrained by AP parameters, voltage clamp data, effects of <em>I<sub>f</sub></em> blockers, and Ca<sup>2+</sup> transient data. <strong><a href="#fig1">Figure 1</a></strong> shows a schematic diagram of the human SAN AP model, emphasizing the compartmentalization essential for calcium handling and detailing the ionic currents, pumps, and exchangers inherited from the parent model or developed independently.</p>
@@ -32,7 +32,7 @@ You can download all the code from this article from my GitHub repository <a hre
 <br/>
 
 #### 2.1. Membrane Potential Dynamics in the Human SAN Model
-<p>The essence of modeling the electrical activity of the sinoatrial node (SAN) cell is captured in the representation of the membrane potential, \( V \), which describes the voltage difference across the cell membrane. This potential is the driving force behind the flow of ions through various channels and pumps, and it orchestrates the complex rhythm of the heart's natural pacemaker.</p>
+<p>The essence of modeling the electrical activity of the SAN cell is captured in the representation of the membrane potential, \( V \), which describes the voltage difference across the cell membrane. This potential is the driving force behind the flow of ions through various channels and pumps, and it orchestrates the complex rhythm of the heart's natural pacemaker.</p>
 
 <p>In the Hodgkin-Huxley-type models, including the one utilized by Fabbri et al. [<a href="#ref1"><strong>1</strong></a>], the membrane potential is described by a differential equation that considers the cumulative effects of multiple ionic currents (<a href="#tab1"><strong>Table 1</strong></a>). These currents, each mediated by specific channels or exchangers, contribute to the overall charge movement across the membrane.</p>
 
@@ -227,7 +227,7 @@ You can download all the code from this article from my GitHub repository <a hre
   <li><strong>OpenCOR Software</strong>: This tool allows us to export the CellML model as Python, bridging the gap between biological understanding and computational implementation. Download OpenCOR at <a href="https://opencor.ws/" target="_blank" rel="noopener noreferrer">this link</a>.</li>
   <li><strong>CellML Model of Fabbri et al.</strong>: The specific blueprint we'll be exploring, this model is key to our journey. You can find it readily available at <a href="https://models.cellml.org/e/568/HumanSAN_Fabbri_Fantini_Wilders_Severi_2017.cellml/view" target="_blank" rel="noopener noreferrer">this location</a>.</li>
 </ol>
-<em><b>Note: </b>You can install the Python packages using the following command:</em><br/>
+<em><strong>Note: </strong>You can install the Python packages using the following command:</em><br/>
 
 ```python
 $ pip install numpy scipy matplotlib
@@ -566,7 +566,7 @@ plt.show()
 <br/>
 
 ### 7. Conclusions
-<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank"><strong>here</strong></a>.</p>
+<p>The complete code of the SAN model can be found in our <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017" target="_blank"><strong>GitHub repository</strong></a>. We welcome your insights and collaboration.</p>
 <p>Here's a summary of the main lessons:</p>
 <ul>
   <li><strong>Understanding the Fundamental Principles of the SAN Model</strong>: We have laid out the core concepts and mechanisms behind the SAN model, diving into its intricacies and how it represents the beating of the heart.</li>
