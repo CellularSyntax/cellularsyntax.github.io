@@ -57,13 +57,17 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
 \[ \frac{dm}{dt} = \alpha_m(V) \cdot (1-m) - \beta_m(V) \cdot m \]
 \[ \frac{dh}{dt} = \alpha_h(V) \cdot (1-h) - \beta_h(V) \cdot h \]
 
-<p>Here's a table summarizing these parameters with their common values:</p>
-
-<table border="1" cellpadding="5">
+<p>The table below (<a href="#tab1"><strong>Table 1</strong></a>) summarizes these parameters with their common values.</p>
+<table border="1" cellpadding="5" id="tab1">
   <tr>
     <th>Parameter</th>
     <th>Description</th>
     <th>Common Values</th>
+  </tr>
+  <tr>
+    <td>\( C_m \)</td>
+    <td>Membrane capacitance</td>
+    <td>1 μF/cm²</td>
   </tr>
   <tr>
     <td>\( g_{\text{Na}} \)</td>
@@ -96,6 +100,8 @@ Today, I invite you to delve into the heart of this paper with me. Let's explore
     <td>Varies with \( V \)</td>
   </tr>
 </table>
+<div class="figcap"><strong>Table 1</strong> Parameters used in the Hodgkin-Huxley model, including descriptions and common values for the sodium channel and membrane capacitance.</div>
+
 
 <p>By exploring the intricacies of the Na+ channel within the Hodgkin-Huxley framework, we can glean essential insights into how ion channels are implemented, providing a foundational understanding that extends to more complex models like those of the human sinoatrial node cell.</p>
 
