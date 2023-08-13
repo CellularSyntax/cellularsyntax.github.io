@@ -19,8 +19,10 @@
 </div>
 
 ## Current Projects
-
-<p>One of my proudest achievements is my work on the <a href="http://www.neuhearth2020.eu/" target="_blank">NeuHeart project</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
+<div style="display: flex; align-items: flex-start;">
+<img src="https://itis.swiss/assets/PageMedia/EventPage/neuheart/Logo-neuHeart__ResizedImageWzIwNCwxNDRd.jpg" alt="NeuHeart Project Logo" style="width:100%; margin-right:10px">
+<p>One of my proudest achievements is my work on the project <a href="http://www.neuhearth2020.eu/" target="_blank">NeuHeart - A neuroprosthesis to Restore the Vagal-Cardiac Closed-Loop Connection after Heart Transplantation</a>, where I developed models of the cardiovascular system and its autonomic control. Through this research, I've investigated the (patho-)physiology of cardiac denervation and designed control strategies for closed-loop vagus nerve stimulation for heart rate control. These innovations have real-world applications, like managing a chronically elevated resting heart rate.</p>
+</div>
 
 ## About the Blog
 <p>In this blog, I'll be sharing coding projects that span the realms of cardiovascular modeling, neuronal modeling, machine learning in medicine, and biomedical signal processing. Whether it's implementing models published in literature or sharing insights from my daily research, I aim to make this space educational and inspiring, especially for those new to the computational modeling game.</p>
