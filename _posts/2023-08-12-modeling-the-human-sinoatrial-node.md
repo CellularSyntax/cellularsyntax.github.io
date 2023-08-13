@@ -566,7 +566,7 @@ plt.show()
 <br/>
 
 ### 7. Conclusions
-<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a></p>
+<p>In this exploration, we have delved into various aspects of the Sinoatrial Node (SAN) model. You can download all the code from this article from my GitHub repository <a href="https://github.com/CellularSyntax/HumanSAN-Fabbri2017"><strong>here</strong></a>.</p>
 <p>Here's a summary of the main lessons:</p>
 <ul>
   <li><strong>Understanding the Fundamental Principles of the SAN Model</strong>: We have laid out the core concepts and mechanisms behind the SAN model, diving into its intricacies and how it represents the beating of the heart.</li>
