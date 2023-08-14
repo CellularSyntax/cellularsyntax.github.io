@@ -6,7 +6,7 @@
     <p style="margin-bottom:0px; font-size:11pt"><strong>Max Haberbusch</strong></p>
       <a href="https://www.linkedin.com/in/max-haberbusch-505625142/" target="_blank">LinkedIn</a> | 
       <a href="https://www.researchgate.net/profile/Max-Haberbusch" target="_blank">ResearchGate</a> | 
-      <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a>
+      <a href="https://twitter.com/cellular_syntax" target="_blank">Twitter</a> | 
       <a href="https://github.com/CellularSyntax" target="_blank">GitHub</a> | 
       <a href="mailto:max.haberbusch@meduniwien.ac.at">Mail</a> |
       <a href="https://orcid.org/0000-0003-0712-4893" target="_blank">ORCiD</a>
