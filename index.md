@@ -34,5 +34,5 @@
 
 <p>And, before you dive into the blog, a quick shoutout to the creator of the cute neuron logo that adds a touch of charm to Cellular Syntax: Neuron icons created by <a href="https://www.flaticon.com/free-icons/neuron" title="neuron icons" target="_blank">Neuron icons created by Freepik - Flaticon</a>.</p>
 
-<p>Happy exploring 🚀, and welcome to the world of Cellular Syntax!</p>
+<p>Happy exploring 🚀, and welcome to the world of Cellular Syntax! ✨</p>
 
