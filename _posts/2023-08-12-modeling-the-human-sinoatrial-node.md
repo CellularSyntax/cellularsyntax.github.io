@@ -506,7 +506,7 @@ def step(self, t, y):
 result = np.piecewise(x, [condition1, condition2], [value_if_condition1, value_if_condition2])
 ```
 
-#### 6.7. Executing the Simulation with solve_ivp
+#### 6.7. Executing the Simulation with <code>solve_ivp</code>
 <p>The simulation of the Sinoatrial Node model is executed using SciPy's <code>solve_ivp</code> function, a general-purpose solver for initial value problems with a flexible interface for defining complex systems of ordinary differential equations (ODEs). </p>
 
 ```python
